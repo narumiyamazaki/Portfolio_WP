@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -5,15 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
-        <link href="./css/style.css" rel="stylesheet">
     <!--Googlefont-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <!--jQuery-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
     <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+    <?php wp_head(); ?>
     </head>
 	<body>
     <?php wp_body_open(); ?>
