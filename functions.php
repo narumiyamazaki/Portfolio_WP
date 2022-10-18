@@ -16,3 +16,14 @@ function portfolio_script(){
 //アクションフック(porfolio_scripts)への登録
 add_action('wp_enqueue_scripts', 'portfolio_script');
 
+//テーマサポート
+function custom_theme_support(){
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    //タイトルタグを管理画面から登録可能に
+    add_theme_support('title-tag');
+    //カスタムメニューの有効化
+    add_theme_support('menus');
+    register_nav_menus(array(
+        'footer_nav' => esc_html__('footer navigation','footer-nav'),
+    ));
+}
