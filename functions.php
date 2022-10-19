@@ -19,11 +19,19 @@ add_action('wp_enqueue_scripts', 'portfolio_script');
 //テーマサポート
 function custom_theme_support(){
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    //アイキャッチ機能の有効化
+    add_theme_support('post-thumbnails');
     //タイトルタグを管理画面から登録可能に
     add_theme_support('title-tag');
     //カスタムメニューの有効化
     add_theme_support('menus');
     register_nav_menus(array(
         'footer_nav' => esc_html__('footer navigation','footer-nav'),
+        'header_nav' => esc_html__('header navigation','header-nav'),
     ));
+    //ブロックエディターの有効化
+    add_theme_support('editor-style');
+    //ブロックエディターで読み込むCSSのパス
+    add_editor_style();
 }
+add_action('after_setup_theme','custom_theme_support');

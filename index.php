@@ -2,9 +2,9 @@
         <main class="l-main">
             <!--MV TB・PC-->
             <h1 class="p-heading1">
-                <img class="p-main-visual" src="img/MV.png" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual" src="<?php echo get_theme_file_uri('img/MV.png')?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
                 <!--SP用の画像-->
-                <img class="p-main-visual--sp" src="img/MV_sp.png" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual--sp" src="<?php echo get_theme_file_uri('img/MV_sp.png')?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
             </h1>
             <div class="p-main-visual__text__wrapper">
                 <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--sp" >ありがとうございます</h2>
@@ -48,7 +48,7 @@
                         </dl>
                     </div>
                     <!--写真のwrapper-->
-                    <img class="p-profile__image" src="img/profile__image.png" alt="サイト製作者30代男性笑顔の写真">
+                    <img class="p-profile__image" src="<?php echo get_theme_file_uri('img/profile__image.png')?>" alt="サイト製作者30代男性笑顔の写真">
                     <a class="p-profile__link--sp">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                 </div>
                 <!--両サイドの装飾-->

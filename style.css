@@ -1724,7 +1724,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url("../img/portofolio-thumbnail.png") left top/cover;
+  background: url(./img/portofolio-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1745,7 +1745,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url(../img/hamburger-thumbnail.png) left top/cover;
+  background: url(./img/hamburger-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1758,7 +1758,7 @@ body {
   }
 }
 .p-works__card__image--hamburger:hover {
-  background: url(../img/hamburger-thumbnail-zoom.png) left top/cover;
+  background: url(./img/hamburger-thumbnail-zoom.png) left top/cover;
   transition: linear 0.1s;
 }
 
@@ -1766,7 +1766,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url(../img/web-production-company-thumbnail.png) left top/cover;
+  background: url(./img/web-production-company-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1779,7 +1779,7 @@ body {
   }
 }
 .p-works__card__image--web-production-company:hover {
-  background: url(../img/web-production-company-thumbnail-zoom.png) left top/cover;
+  background: url(./img/web-production-company-thumbnail-zoom.png) left top/cover;
   transition: linear 0.1s;
 }
 
@@ -1815,7 +1815,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url(../img/RaiseTech-web-banner-thumbnail.png) left top/cover;
+  background: url(./img/RaiseTech-web-banner-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1828,7 +1828,7 @@ body {
   }
 }
 .p-works__card__image--RaiseTech-web-banner:hover {
-  background: url(../img/RaiseTech-web-banner-thumbnail-zoom.png) left top/cover;
+  background: url(./img/RaiseTech-web-banner-thumbnail-zoom.png) left top/cover;
   transition: linear 0.1s;
 }
 
@@ -1836,7 +1836,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url(../img/RaiseTech-sns-banner-thumbnail.png) left top/cover;
+  background: url(./img/RaiseTech-sns-banner-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1849,7 +1849,7 @@ body {
   }
 }
 .p-works__card__image--RaiseTech-sns-banner:hover {
-  background: url(../img/RaiseTech-sns-banner-thumbnail-zoom.png) left top/cover;
+  background: url(./img/RaiseTech-sns-banner-thumbnail-zoom.png) left top/cover;
   transition: linear 0.1s;
 }
 
@@ -1857,7 +1857,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background: url(../img/miraini-logo-thumbnail.png) left top/cover;
+  background: url(./img/miraini-logo-thumbnail.png) left top/cover;
   margin-bottom: 2.2222222222vw;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
@@ -1870,7 +1870,7 @@ body {
   }
 }
 .p-works__card__image--miraini-logo:hover {
-  background: url(../img/miraini-logo-thumbnail-zoom.png) left top/cover;
+  background: url(./img/miraini-logo-thumbnail-zoom.png) left top/cover;
   transition: linear 0.1s;
 }
 
@@ -2888,28 +2888,28 @@ body {
 }
 
 .c-skill__icon__image--html {
-  background: url(../img/html-icon.png);
+  background: url(./img/html-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
 }
 
 .c-skill__icon__image--sass {
-  background: url(../img/sass-icon.png);
+  background: url(./img/sass-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
 }
 
 .c-skill__icon__image--WordPress {
-  background: url(../img/WordPress-icon.png);
+  background: url(./img/WordPress-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
 }
 
 .c-skill__icon__image--responsive {
-  background: url(../img/responsive-icon.png);
+  background: url(./img/responsive-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
@@ -2953,21 +2953,21 @@ body {
 }
 
 .c-skill__icon__image--retouch {
-  background: url(../img/retouch-icon.png);
+  background: url(./img/retouch-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
 }
 
 .c-skill__icon__image--bezier-curve {
-  background: url(../img/bezier-curve-icon.png);
+  background: url(./img/bezier-curve-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
 }
 
 .c-skill__icon__image--Figma {
-  background: url(../img/Figma-icon.png);
+  background: url(./img/Figma-icon.png);
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
@@ -3002,21 +3002,21 @@ body {
 }
 
 .c-profile__external-link--twitter {
-  background: url(../img/twitter-icon.png);
+  background: url(./img/twitter-icon.png);
   background-size: cover;
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
 }
 
 .c-profile__external-link--blog {
-  background: url(../img/blog-icon.png);
+  background: url(./img/blog-icon.png);
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
   background-size: cover;
 }
 
 .c-profile__external-link--GitHub {
-  background: url(../img/github-icon.png);
+  background: url(./img/github-icon.png);
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
   background-size: cover;
