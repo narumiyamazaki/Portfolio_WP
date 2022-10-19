@@ -1,4 +1,4 @@
-<footer class="l-footer">
+<footer id="contact" class="l-footer">
             <div class="p-footer__container">
                 <!--左側のテキスト-->
                 <div class="p-footer__text__wrapper">
