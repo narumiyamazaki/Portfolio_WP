@@ -66,7 +66,7 @@ Template Name:profile
                     </div>
                     <!--写真・外部リンク-->
                     <div class="p-profile__image__wrapper--lower-page">
-                        <img class="p-profile__image--lower-page" src="img/profile__image.png" alt="サイト製作者30代男性笑顔の写真">
+                        <img class="p-profile__image--lower-page" src="<?php echo get_theme_file_uri('/img/profile__image.png"')?> alt="サイト製作者30代男性笑顔の写真">
                         <div class="p-profile__external-link__wrapper">
                             <span class="u-visually-hidden">ツイッター</span>
                             <a class="c-profile__external-link--twitter" href="https://twitter.com/narumi13329161"></a>

@@ -32,7 +32,12 @@
                                 <dt class="p-profile__item--name">氏名</dt>
                                 <div class="p-profile__item--English-translation">name</div>
                             </div>
-                            <dd class="p-profile__name">narumi</dd>
+                            <dd class="p-profile__name">
+                                <?php 
+                                $author = get_userdata($post->post_author);
+                                echo $author->display_name;
+                                ?>
+                            </dd>
                         </dl>
                         <!--経歴のwrapper-->
                         <dl class="p-profile__contents__wrapper--career">
