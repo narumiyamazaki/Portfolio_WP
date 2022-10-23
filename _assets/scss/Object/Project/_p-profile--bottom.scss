@@ -1,0 +1,5 @@
+.p-profile--bottom{
+    & .p-profile__item--lower-page{
+        padding-bottom: calc(16/1440*100vw);
+    }
+}

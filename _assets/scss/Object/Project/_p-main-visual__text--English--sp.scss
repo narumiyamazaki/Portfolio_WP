@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+@use '../../Foundation/mixin';
+
+.p-main-visual__text--English--sp{
+    font-family: va.$font-base-English;
+    font-size: max(calc(14/375*100vw),14px);
+    @include mixin.mq(tb){
+        display: none;
+    }
+}

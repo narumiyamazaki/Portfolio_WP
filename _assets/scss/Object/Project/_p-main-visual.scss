@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-main-visual{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    @include mixin.mq(sp){
+        display: none;
+    }
+}

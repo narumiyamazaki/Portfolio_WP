@@ -1,0 +1,18 @@
+@use "../../Foundation/vars" as va;
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__career__text{
+    font-family: va.$font-base-Japanese;
+    font-size:max(calc(16/1440*100vw),16px);
+    max-width: min(calc(650/1440*100vw),650px);
+    @include mixin.mq(sp){
+        max-width: 100vw;
+        font-size: max(calc(16/375*100vw));
+    }
+    &:not(:last-child){
+        margin-bottom:max(calc(24/1440*100vw),24px);
+        @include mixin.mq(sp){
+            margin-bottom:max(calc(16/375*100vw),16px);
+        }
+    }
+}

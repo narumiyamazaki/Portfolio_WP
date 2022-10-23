@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../../scss/Foundation/mixin';
+
+.p-works__heading2__Japanese--lower-page{
+    font-family: va.$font-base-Japanese;
+    color: va.$main-color;
+    font-size:calc(16/1440*100vw);
+    margin-left:calc(8/1440*100vw);
+    @include mixin.mq(sp){
+        font-size:calc(16/375*100vw);
+        margin-left:calc(8/375*100vw);
+    }
+}

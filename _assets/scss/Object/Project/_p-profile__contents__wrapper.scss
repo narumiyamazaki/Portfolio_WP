@@ -1,0 +1,8 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__contents__wrapper{
+    margin-right:40px;
+    @include mixin.mq(sp){
+        margin:0;
+    }
+}

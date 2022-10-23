@@ -1,0 +1,6 @@
+@use '../../Foundation/vars' as va;
+
+.u-text__emphasis--about-me{
+    color:va.$main-color;
+    font-weight: bold;
+}

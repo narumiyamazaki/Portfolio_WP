@@ -1,0 +1,20 @@
+@use '../../Foundation/mixin';
+
+.p-header__nav{
+    display: none;
+    position:absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    @include mixin.mq(tb){
+        display:block;
+        position: static;
+        
+    }
+}
+
+//ハンバーガーメニューのボタンを押したとき
+.p-header__nav.open{
+        display: block;
+    }

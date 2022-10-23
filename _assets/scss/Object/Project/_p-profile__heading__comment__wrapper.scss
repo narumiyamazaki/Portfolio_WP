@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__heading__comment__wrapper{
+    @include mixin.mq(sp){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,20 @@
+//変数の定義
+
+//サイトの基本設定
+
+//フォント
+$font-base:'M PLUS 1p', sans-serif,'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica;
+$font-base-Japanese:'Noto Serif JP', serif;
+$font-base-English:'Roboto', sans-serif;
+
+$main-color:#08144B;
+$sub-color-y:#FAFF0D;
+$sub-color-b:#193EE3;
+$sub-color-w:#FAFAFA;
+
+// メディアクエリのブレイクポイント用変数
+$breakpoints: (
+    'sp': 'screen and (max-width: 414px)',
+    'tb': 'screen and (max-width: 768px)',
+    'pc': 'screen and (max-width: 1024px)',
+  ) !default;

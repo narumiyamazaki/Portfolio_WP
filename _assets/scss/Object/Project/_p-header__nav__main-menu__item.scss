@@ -1,0 +1,19 @@
+@use '../../../scss/Foundation/mixin';
+@use '../../Foundation/vars' as va;
+
+.p-header__nav__main-menu__item{
+    font-family: 'Roboto', sans-serif;
+    background: va.$sub-color-y;
+    color: va.$main-color;
+    font-size: calc(40/1440*100vw);
+    display:flex;
+    align-items: center;
+    padding:calc(10/1440*100vw) calc(16/1440*100vw);
+    @include mixin.mq(sp){
+        background: transparent;
+        color:va.$sub-color-y;
+        padding:0;
+        font-size: calc(40/375*100vw);
+        margin-bottom: calc(32/375*100vw);
+    }
+}

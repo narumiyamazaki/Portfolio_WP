@@ -1,0 +1,27 @@
+@use '../../Foundation/mixin';
+
+.p-sub-menu--service {
+    display: none;
+    position: absolute;
+    >li > a {
+        margin: 1px;
+        background: #f5f5f5;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+        width:100%;
+        @include mixin.mq(pc){
+            width: 14rem;
+        }
+    }
+}
+
+.p-sub-menu--service.open{
+    display: block;
+    position:static;
+    @include mixin.mq(pc){
+        position: absolute;
+    }
+}

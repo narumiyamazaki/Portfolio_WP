@@ -1,0 +1,13 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__wrapper--lower-page{
+    max-width:calc(1200/1440*100vw);
+    display: flex;
+    align-items: flex-end;
+    order:1;
+    padding-bottom:calc(40/1440*100vw);
+    @include mixin.mq(sp){
+        max-width:calc(375/375*100vw);
+        display: block;
+    }
+}

@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__contents__wrapper--name{
+    display:flex;
+    margin-bottom:calc(8/1440*100vw);
+    @include mixin.mq(sp){
+        margin-bottom:calc(24/375*100vw);
+    }
+}

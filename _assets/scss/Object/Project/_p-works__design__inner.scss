@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__design__inner{
+    background: #d9d9d9;
+    padding:calc(80/1440*100vw) calc(120/1440*100vw);
+    display: flex;
+    justify-content: center;
+    @include mixin.mq(sp){
+        padding:calc(40/375*100vw) 0;
+    }
+}

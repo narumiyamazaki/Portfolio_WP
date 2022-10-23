@@ -1,0 +1,8 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-footer__form{
+    width:max(calc(520/1440*100vw),520px);
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+    }
+}

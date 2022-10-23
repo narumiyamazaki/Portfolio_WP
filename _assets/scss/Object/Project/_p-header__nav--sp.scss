@@ -1,0 +1,28 @@
+@use '../../Foundation/mixin';
+@use "../../Foundation/vars" as va;
+
+
+.p-header__nav--sp{
+  display: none;
+  @include mixin.mq(sp){
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: va.$sub-color-y;
+    background:va.$main-color;
+    text-align: center;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+    //flex-direction: column;
+  } 
+}
+
+.p-header__nav--sp.active{
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

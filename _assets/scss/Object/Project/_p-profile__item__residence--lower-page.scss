@@ -1,0 +1,14 @@
+@use "../../Foundation/vars" as va;
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__item__residence--lower-page{
+    font-family: va.$font-base-Japanese;
+    font-size:calc(24/1440*100vw);
+    font-weight: 600;
+    padding-top: calc(16/1440*100vw);
+    @include mixin.mq(sp){
+        font-size:calc(18/375*100vw);
+        padding:0;
+        display: inline-block;
+    }   
+}

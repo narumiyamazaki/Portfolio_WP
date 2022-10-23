@@ -1,0 +1,7 @@
+@use '../../Foundation/mixin';
+
+.u-display-none{
+    @include mixin.mq(tb){
+        display:none;
+    }
+}

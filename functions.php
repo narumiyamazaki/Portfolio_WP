@@ -43,3 +43,40 @@ function add_additional_class_on_li($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+add_filter('walker_nav_menu_start_el', 'add_class_on_link', 10, 4);
+ function add_class_on_link($item_output, $item){
+ return preg_replace('/(<a.*?)/', '$1' . " class='p-header__nav__main-menu__item-link'", $item_output);
+}
+
+/* ---------- カスタム投稿の追加 ---------- */
+function create_post_type() {
+  register_post_type( // カスタム投稿タイプの追加関数
+    'news', //カスタム投稿タイプ名（半角英数字の小文字）
+    array( //オプション（以下）
+      'label' => 'Works', // 管理画面上の表示（日本語でもOK）
+      'public' => true, // 管理画面に表示するかどうかの指定
+      'has_archive' => true, // 投稿した記事の一覧ページを作成する
+      'menu_position' => 5, // 管理画面メニューの表示位置（投稿の下に追加）
+      'show_in_rest' => true, // Gutenbergの有効化
+      'supports' => array( // サポートする機能（以下）
+        'title',  // タイトル
+        'editor', // エディター
+        'thumbnail', // アイキャッチ画像
+        'revisions' // リビジョンの保存
+      ),
+    )
+  );
+    // 「ニュース」のカスタム投稿にカテゴリーを追加
+    register_taxonomy(
+        'news-cat',
+        'news', // カテゴリーを追加したいカスタム投稿タイプ名
+        array(
+          'label' => 'カテゴリー',
+          'hierarchical' => true,
+          'public' => true,
+          'show_in_rest' => true,
+        )
+      );
+}
+add_action( 'init', 'create_post_type' );

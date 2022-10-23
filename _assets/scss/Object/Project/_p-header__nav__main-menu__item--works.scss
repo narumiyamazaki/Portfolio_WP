@@ -1,0 +1,27 @@
+@use "../../Foundation/vars" as va;
+
+.p-header__nav__main-menu__item--works{
+    //aタグ
+        display: block;
+        position:relative;
+    //a下線
+    &::after{
+        content: "";
+        position:absolute;
+        left:0px;
+        //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
+        bottom: 4px;
+        height: 3px;
+        background: va.$main-color;
+        transform: scale(0,1);
+        transform-origin: right top;
+        transition: transform .1s;
+        width:100%;
+        }
+    
+     &:hover::after{
+        //width:calc(100% - 16rem);
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__infomation--sp{
+    display: none;
+    @include mixin.mq(sp){
+        display: block;
+        width:calc(343/375*100vw);
+        border-top: 1px #000 solid;
+        border-bottom: 1px #000 solid;
+    }
+}

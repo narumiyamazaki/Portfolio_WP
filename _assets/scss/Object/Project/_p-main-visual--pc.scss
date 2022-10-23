@@ -1,0 +1,7 @@
+@use '../../Foundation/mixin';
+
+.p-main-visual--pc{
+    @include mixin.mq(sp){
+        display: none;
+    }
+}
