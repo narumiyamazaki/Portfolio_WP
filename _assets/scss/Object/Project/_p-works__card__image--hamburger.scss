@@ -1,0 +1,21 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__card__image--hamburger{
+    //右下にroleを固定
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    background:url(./img/hamburger-thumbnail.png) left top/cover;
+    margin-bottom: calc(32/1440*100vw);
+    width:calc(280/1440*100vw);
+    height:calc(280/1440*100vw);
+    border: 1px #000 solid;
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+        height:calc(343/375*100vw);
+    }
+    &:hover{
+        background:url(./img/hamburger-thumbnail-zoom.png) left top/cover;
+        transition: linear .1s;
+    }
+}

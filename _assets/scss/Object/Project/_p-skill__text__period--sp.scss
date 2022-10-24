@@ -1,0 +1,13 @@
+@use '../../Foundation/vars' as va;
+@use '../../../scss/Foundation/mixin';
+
+
+.p-skill__text__period--sp{
+    display: none;
+    @include mixin.mq(sp){
+        display:block;
+        font-family: va.$font-base-Japanese;
+        font-size:calc(16/375*100vw);
+        margin-bottom:calc(24/375*100vw);
+    }
+}

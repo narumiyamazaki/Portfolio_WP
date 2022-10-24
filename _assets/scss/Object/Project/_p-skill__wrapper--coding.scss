@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-skill__wrapper--coding{
+    display: flex;
+    justify-content: space-between;
+    @include mixin.mq(sp){
+        flex-direction: column;
+    }
+}

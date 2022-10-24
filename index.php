@@ -63,6 +63,9 @@
             <!--section区切りのボーダー-->
             <div class="u-margin__section-border"><span class="c-section-border"></span></div>
             <!--スキル-->
+            <!--アンカーリンクずれ対策用の要素-->
+            <div id="skill" class="p-skill__anchor"></div>
+            <!--アンカーリンクずれ対策用の要素-->
             <article class="p-skill">
                 <!--中央部分のcontainer-->
                 <div class="p-skill__container">
@@ -135,6 +138,7 @@
                 <div class="p-works__container">
                     <h2 class="p-works__heading2--English">Works<span class="p-works__heading2--Japanese">作品事例</span></h2>
                     <p class="p-works__text">今までの制作事例です</p>
+                    <!--投稿を取得する。カスタム投稿タイプを使って、ループで記事を取得するのでは？-->    
                     <div class="p-works__card__container--1st">
                         <article class="p-works__card__wrapper">
                             <a class="p-works__card" href="#">

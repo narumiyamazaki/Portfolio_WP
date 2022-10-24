@@ -1,0 +1,18 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-header--nav--main-menu {
+    display: flex;
+    justify-content: center;
+    /*不要？
+        @include mixin.mq(pc){
+            width: 140px;
+            flex-direction: row;
+        }  
+        @include mixin.mq(tb){
+            flex-direction: column;
+        }
+        @include mixin.mq(pc){
+            flex-direction: row;
+        }
+    */
+}

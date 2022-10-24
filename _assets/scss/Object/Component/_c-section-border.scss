@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.c-section-border{
+    width:calc(920/1440*100vw);
+    height: 2px;
+    background-color: #5E527E;
+    display: block;
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+       }
+}

@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__design--portfolio{
+    object-fit: contain;
+    width:calc(920/1440*100vw);
+    @include mixin.mq(sp){
+        width: calc(343/375*100vw);
+    }
+}

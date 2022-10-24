@@ -1,0 +1,11 @@
+@use '../../Foundation/vars' as va;
+@use '../../../scss/Foundation/mixin';
+
+.c-skill__icon__text{
+    font-family: va.$font-base-English;
+    font-size:clamp(10px,calc(14/1440*100vw),14px)1.4rem;
+    font-style: italic;
+    @include mixin.mq(sp){
+        font-size:max(calc(14/375*100vw),14px);    
+    }
+}

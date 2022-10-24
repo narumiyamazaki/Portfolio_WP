@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+
+.p-profile__side__text{
+    color:va.$sub-color-w;
+    font-family: va.$font-base-English;
+    font-style: italic;
+    font-size:40px;
+    transform: rotate(90deg);
+    white-space: nowrap
+}

@@ -1,0 +1,12 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__thumbnail--web-site{
+    display: flex;
+    object-fit: contain;
+    width:calc(920/1440*100vw);
+    height:calc(460/1440*100vw);
+    @include mixin.mq(sp){
+        width: calc(343/375*100vw);
+        height: calc(180/375*100vw);
+    }
+}

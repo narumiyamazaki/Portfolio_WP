@@ -1,0 +1,14 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-skill__icon__wrapper--coding{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width:calc(381/1440*100vw);
+    margin-bottom:calc(40/1440*100vw);
+    @include mixin.mq(sp){
+        width:calc(301/375*100vw);
+        margin:0 auto calc(40/375*100vw);
+    
+    }
+}

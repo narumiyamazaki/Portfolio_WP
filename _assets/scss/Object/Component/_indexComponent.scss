@@ -1,0 +1,26 @@
+@use './c-section-border';
+@use './c-side__text';
+
+//skill
+@use './c-skill__icon__image--html';
+@use './c-skill__icon__image--sass';
+@use './c-skill__icon__image--WordPress';
+@use './c-skill__icon__image--responsive';
+@use './c-skill__icon__text';
+@use './c-circle';
+@use './c-section-border--skill';
+@use './c-skill__icon__image--retouch';
+@use './c-skill__icon__image--bezier-curve';
+@use './c-skill__icon__image--Figma';
+
+//works
+@use './c-works__card__role';
+@use './c-asterisk';
+
+//profile-lower-page
+@use './c-profile__external-link--twitter';
+@use './c-profile__external-link--blog';
+@use './c-profile__external-link--GitHub';
+
+//works-lower-page
+@use './c-works__role';

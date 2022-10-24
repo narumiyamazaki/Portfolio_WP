@@ -1,0 +1,201 @@
+//header
+@use './p-main-menu';
+@use './p-header__nav__main-menu__item';
+@use './p-header__nav__main-menu__item--other';
+@use './p-header__nav__main-menu__item--profile';
+@use './p-header__nav__main-menu__item--skill';
+@use './p-header__nav__main-menu__item--works';
+@use './p-header__nav__main-menu__item--contact';
+@use './p-header__nav__main-menu__item-link';
+
+//header SP
+@use './p-header__nav--sp';
+@use './p-header__nav__main-menu--sp';
+@use './p-main-visual--pc';
+@use './p-main-visual--sp';
+@use './p-main-visual__text--Japanese--sp';
+@use './p-main-visual__text--English--sp';
+
+@use './p-header__breadcrumb__wrapper';
+@use './p-header__title';
+@use './p-header__breadcrumb__home';
+@use './p-header__breadcrumb__arrow';
+@use './p-header__breadcrumb__current.scss';
+@use './p-profile__link--sp';
+
+//共通スタイル top-page
+@use './p-top-page__side--left';
+@use './p-top-page__side--right';
+
+//@use './p-nav--service';
+@use './p-header__nav__wrapper';
+@use './p-sub-menu--service';
+@use './p-header__title__wrapper';
+@use './p-nav--btn';
+@use './p-header__nav';
+@use './p-header__nav__main-menu';
+@use './p-heading1';
+@use './p-main-visual';
+@use './p-main-visual__text__wrapper';
+@use './p-main-visual__heading2--Japanese';
+@use './p-main-visual__text--Japanese';
+@use './p-main-visual__heading2--English';
+@use './p-main-visual__text--English';
+
+//prifile
+@use './p-profile';
+@use './p-profile__contents__container';
+@use './p-profile__heading2--English';
+@use './p-profile__heading2--Japanese';
+@use './p-profile__text--main';
+@use './p-profile__contents__wrapper--name';
+@use './p-profile__item--name';
+@use './p-profile__image';
+@use './p-profile__item--English-translation';
+@use './p-profile__name';
+@use './p-profile__item--name--wrapper';
+@use './p-profile__contents__wrapper';
+@use './p-profile__contents__wrapper--career';
+@use './p-profile__item--career';
+@use './p-profile__item--career--wrapper';
+@use './p-profile__career--top';
+@use './p-profile__career--bottom';
+@use './p-profile__link';
+@use './p-profile__link__arrow';
+@use './p-profile__heading__comment__wrapper';
+
+//skill
+//coding
+@use './p-skill__anchor';
+@use './p-skill';
+@use './p-skill__container';
+@use './p-skill__heading2--English';
+@use './p-skill__heading2--Japanese';
+@use './p-skill__heading3';
+@use './p-skill__icon__wrapper--coding';
+@use './p-skill__icon__wrapper--design';
+
+@use './p-skill__wrapper--coding';
+@use './p-skill__text__item__wrapper';
+@use './p-skill__text__item';
+@use './p-skill__text--period';
+@use './p-skill__text--date';
+
+//skill-sp
+@use './p-skill__text__period--sp';
+@use './p-skill__text__date--sp';
+
+//design
+@use './p-skill__wrapper--design';
+
+//works
+@use './p-works';
+@use './p-works__heading2--English';
+@use './p-works__heading2--Japanese';
+@use './p-works__content__text__wrapper';
+@use './p-works__text';
+@use './p-works__container';
+@use './p-works__card__container--1st';
+@use './p-works__card__image--portfolio';
+@use './p-works__card__image--hamburger';
+@use './p-works__card__image--web-production-company';
+@use './p-works__card__caption';
+
+@use './p-works__card__container--2nd';
+@use './p-works__card__image--RaiseTech-web-banner';
+@use './p-works__card__image--RaiseTech-sns-banner';
+@use './p-works__card__image--miraini-logo';
+
+//footer
+@use './p-footer__container';
+@use './p-footer__text__wrapper';
+@use './p-footer__heading2--English';
+@use './p-footer__heading2--Japanese';
+@use './p-footer__text';
+@use './p-footer__form';
+@use './p-footer__form__label';
+@use './p-footer__form__input--name';
+@use './p-footer__form__input--company';
+@use './p-footer__form__input--email';
+@use './p-footer__form__textarea';
+@use './p-footer__form__button';
+@use './p-footer__copyright';
+@use './p-footer__copyright__text';
+
+//main-lower-page
+@use './p-main--lower-page';
+
+//共通スタイル lower-page
+@use './p-lower-page__side--left';
+@use './p-lower-page__side--right';
+
+//profile-lower-page
+@use './p-profile__container--lower-page';
+@use './p-profile__wrapper--lower-page';
+@use './p-profile__inner--lower-page';
+@use './p-profile__heading__wrapper';
+@use './p-profile__heading__comment';
+@use './p-profile__heading__comment__shadow';
+@use './p-profile__heading__comment__emphasis';
+@use './p-profile__infomation';
+@use './p-profile__image__wrapper--lower-page.scss';
+
+//SP用の表
+@use './p-profile__infomation--sp';
+@use './p-profile__item--Japanese';
+@use './p-profile__item__name--lower-page';
+@use './p-profile__item__residence--lower-page';
+@use './p-profile__item__year-of-birth--lower-page';
+@use './p-profile__item__occupation--lower-page';
+@use './p-profile--bottom';
+@use './p-profile__name--lower-page';
+@use './p-profile__residence--lower-page';
+@use './p-profile__year-of-birth--lower-page';
+@use './p-profile__occupation--lower-page';
+@use './p-profile__career';
+@use './p-profile__career__heading3';
+@use './p-profile__career__text';
+@use './p-profile__image--lower-page';
+@use './p-profile__external-link__wrapper';
+@use './p-profile__external-link__text';
+
+//about me
+@use './p-profile__about-me__heading2--English';
+@use './p-profile__about-me__heading2--Japanese';
+@use './p-profile__about-me__wrapper';
+@use './p-profile__about-me';
+@use './p-profile__about-me__content__container';
+@use './p-profile__about-me__content__wrapper';
+@use './p-profile__about-me__heading3';
+@use './p-profile__about-me__text__wrapper';
+@use './p-profile__about-me__text';
+
+//works-lower-page
+@use './p-works__wrapper--lower-page';
+@use './p-works__container--lower-page';
+@use './p-works__heading2__English--lower-page';
+@use './p-works__heading2__Japanese--lower-page';
+@use './p-link__work';
+@use './p-works__heading3__lower-page__wrapper--web-site';
+@use './p-works__heading3__lower-page__wrapper--design';
+@use './p-works__heading3--lower-page';
+@use './p-works__thumbnail--web-site';
+@use './p-works__thumbnail--RaiseTech-google-banner';
+@use './p-works__thumbnail--RaiseTech-sns-banner';
+@use './p-works__thumbnail--logo';
+@use './p-works__thumbnail__box';
+@use './p-works__thumbnail__box--RaiseTech-google-banner';
+@use './p-works__thumbnail__box--RaiseTech-sns-banner';
+@use './p-works__design__container';
+@use './p-works__desing__wrapper';
+@use './p-works__design--portfolio';
+@use './p-works__design__inner';
+@use './p-works__desing__box';
+@use './p-quote__wrapper';
+@use './p-works__content__text';
+@use './p-works__logo__content__text--top';
+@use './p-works__logo__content__text--bottom';
+@use './p-quote__list__wrapper';
+@use './p-quote__list';
+@use './p-quote__text';
+@use './p-quote__text--last';

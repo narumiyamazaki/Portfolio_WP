@@ -1,0 +1,6 @@
+.c-skill__icon__image--Figma{
+    background:url(./img/Figma-icon.png);
+    width: clamp(50px,calc(70/1440*100vw),70px);
+    height: clamp(50px,calc(70/1440*100vw),70px);
+    background-size:cover;
+}

@@ -1,0 +1,7 @@
+@use '../../Foundation/vars' as va;
+
+.p-quote__text{
+    font-family: va.$font-base-Japanese;
+    font-size: max(calc(16/1440*100vw),16px);
+    margin-bottom:max(calc(24/1440*100vw),24px);
+}

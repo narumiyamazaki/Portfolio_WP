@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.u-margin__section-border{
+    margin:calc(59/1440*100vw) 0;
+    display: flex;
+    justify-content: center;
+    @include mixin.mq(sp){
+        margin: calc(80/375*100vw) 0;
+       }
+}

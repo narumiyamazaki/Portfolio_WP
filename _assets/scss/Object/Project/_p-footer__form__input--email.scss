@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-footer__form__input--email{
+    width:520px;
+    height: 30px;
+    background: #fff;
+    margin-bottom: 24px;
+    @include mixin.mq(sp){
+        width:calc(320/375*100vw);
+    }
+}

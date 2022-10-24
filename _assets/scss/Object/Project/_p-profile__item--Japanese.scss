@@ -1,0 +1,9 @@
+@use '../../../scss/Foundation/mixin';
+
+
+.p-profile__item--Japanese{
+    //display: inline-block;
+    @include mixin.mq(sp){
+        margin-right:calc(24/375*100vw);
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__career{
+    padding:calc(16/1440*100vw) 0;
+    border-bottom: 1px solid #000;
+    @include mixin.mq(sp){
+        padding:0;
+        border-bottom:0px;
+        margin-bottom:calc(40/375*100vw);
+    }
+}

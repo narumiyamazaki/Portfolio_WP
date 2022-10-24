@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__inner--lower-page{
+    //max-width: min(calc(660/1440*100vw),700px);
+    min-width: min(calc(660/1440*100vw),700px);
+    margin-right: calc(51/1440*100vw);
+    @include mixin.mq(sp){
+        margin:0;
+    }
+}

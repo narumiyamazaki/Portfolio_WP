@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile{
+    display:flex;
+    justify-content: space-between;
+    @include mixin.mq(sp){
+        display:block;
+        padding:0 max(calc(16/375*100vw),16px)
+     }
+}

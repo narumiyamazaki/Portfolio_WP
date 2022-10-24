@@ -1,0 +1,15 @@
+@use '../../Foundation/vars' as va;
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__year-of-birth--lower-page{
+    font-family: va.$font-base-Japanese;
+    font-size: max(calc(24/1440*100vw),20px);
+    padding-top: calc(16/1440*100vw);
+    @include mixin.mq(sp){
+        padding:0;
+        font-size:max(18/375*100vw);
+        //display: inline-block;
+        position:relative;
+        //right:calc(15/375*100vw);
+    }
+}

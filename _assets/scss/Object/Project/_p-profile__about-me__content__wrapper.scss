@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__about-me__content__wrapper{
+    display: grid;
+    gap:calc(80/1440*100vw);
+    grid-template-columns: repeat(2,1fr);
+    @include mixin.mq(sp){
+        grid-template-columns: 1fr;
+        gap:calc(80/375*100vw);
+    }
+}

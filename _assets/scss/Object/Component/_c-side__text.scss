@@ -1,0 +1,10 @@
+@use '../../Foundation/vars' as va;
+
+.c-side__text{
+    color:va.$sub-color-w;
+    font-family: va.$font-base-English;
+    font-style: italic;
+    font-size:calc(40/1440*100vw);
+    transform: rotate(90deg);
+    white-space: nowrap
+}

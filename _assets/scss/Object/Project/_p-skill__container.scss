@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-skill__container{
+    order:1;
+    width:calc(920/1440*100vw);
+    padding-bottom:calc(40/1440*100vw);
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+       }
+}

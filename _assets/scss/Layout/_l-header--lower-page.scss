@@ -1,0 +1,16 @@
+@use '../Foundation/mixin';
+
+.l-header--lower-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    //headerを固定する場合
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include mixin.mq(sp){
+        width:100vw;
+    }
+}

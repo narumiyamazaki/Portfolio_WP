@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__heading3__lower-page__wrapper--web-site{
+    display: flex;
+    margin-bottom:calc(184/1440*100vw);
+    @include mixin.mq(sp){
+        display: block;
+        margin-bottom:calc(8/375*100vw);
+    }
+}

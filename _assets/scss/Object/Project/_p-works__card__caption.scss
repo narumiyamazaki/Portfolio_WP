@@ -1,0 +1,16 @@
+@use '../../Foundation/vars' as va;
+@use '../../../scss/Foundation/mixin';
+
+.p-works__card__caption{
+    display: flex;
+    justify-content: center;
+    font-family: va.$font-base-Japanese;
+    //フォントサイズは要調整か？
+    font-size: calc(18/1440*100vw);
+    font-weight: bold;
+    color:#5E527E;
+    @include mixin.mq(sp){
+        margin:calc(40/375*100vw) auto;
+        font-size:calc(18/375*100vw);
+    }
+}
