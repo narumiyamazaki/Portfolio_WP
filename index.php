@@ -2,9 +2,9 @@
         <main class="l-main">
             <!--MV TB・PC-->
             <h1 class="p-heading1">
-                <img class="p-main-visual" src="<?php echo get_theme_file_uri('img/MV.png')?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual" src="<?php echo esc_url(get_theme_file_uri('img/MV.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
                 <!--SP用の画像-->
-                <img class="p-main-visual--sp" src="<?php echo get_theme_file_uri('img/MV_sp.png')?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual--sp" src="<?php echo esc_url(get_theme_file_uri('img/MV_sp.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
             </h1>
             <div class="p-main-visual__text__wrapper">
                 <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--sp" >ありがとうございます</h2>
