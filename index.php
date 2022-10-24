@@ -53,7 +53,7 @@
                         </dl>
                     </div>
                     <!--写真のwrapper-->
-                    <img class="p-profile__image" src="<?php echo get_theme_file_uri('img/profile__image.png')?>" alt="サイト製作者30代男性笑顔の写真">
+                    <img class="p-profile__image" src="<?php echo esc_url(get_theme_file_uri('img/profile__image.png'))?>" alt="サイト製作者30代男性笑顔の写真">
                     <a class="p-profile__link--sp">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                 </div>
                 <!--両サイドの装飾-->

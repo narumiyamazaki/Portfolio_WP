@@ -1,17 +1,16 @@
 
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
     <head>
-        <meta charset="utf-8">
+        <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
+    <!-- CSS 
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
-    <!--Googlefont-->
+    -->
+    <!--Googlefont
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <!--jQuery-->
-        
-    <!-- Font Awesome -->
+    -->
     <?php wp_head(); ?>
     </head>
 	<body>
