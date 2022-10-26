@@ -1,10 +1,54 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>narumiのPortfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="./css/style.css" rel="stylesheet">
+    <!--Googlefont-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet"> 
+    <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+    </head>
+	<body>
+        <header class="l-header">
+            <div class="p-header--link">
+                <p class="p-nav--btn">
+                    <a href="javascript:void(0)"><span>メニューを開く</span></a>
+                </p>
+                <!--PC・TB用のnavメニュー-->
+                <nav class="p-header__nav">
+                    <ul class="p-header__nav__main-menu">
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--profile" href="#">Profile</a></li>
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--skill" href="#">Skill</a></li>
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--works" href="#">Works</a></li>
+                        <li class="p-header__nav__main-menu__item--other"><a class="p-header__nav__main-menu__item--contact" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--SP用のnavメニュー-->
+                <nav class="p-header__nav--sp">
+                    <ul class="p-header__nav__main-menu--sp">
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--profile" href="#">Top</a></li>
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--profile" href="#">Profile</a></li>
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--skill" href="#">Skill</a></li>
+                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--works" href="#">Works</a></li>
+                        <li class="p-header__nav__main-menu__item--other"><a class="p-header__nav__main-menu__item--contact" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main class="l-main">
             <!--MV TB・PC-->
             <h1 class="p-heading1">
-                <img class="p-main-visual" src="<?php echo esc_url(get_theme_file_uri('img/MV.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual" src="img/MV.png" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
                 <!--SP用の画像-->
-                <img class="p-main-visual--sp" src="<?php echo esc_url(get_theme_file_uri('img/MV_sp.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
+                <img class="p-main-visual--sp" src="img/MV_sp.png" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
             </h1>
             <div class="p-main-visual__text__wrapper">
                 <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--sp" >ありがとうございます</h2>
@@ -32,12 +76,7 @@
                                 <dt class="p-profile__item--name">氏名</dt>
                                 <div class="p-profile__item--English-translation">name</div>
                             </div>
-                            <dd class="p-profile__name">
-                                <?php 
-                                $author = get_userdata($post->post_author);
-                                echo $author->display_name;
-                                ?>
-                            </dd>
+                            <dd class="p-profile__name">narumi</dd>
                         </dl>
                         <!--経歴のwrapper-->
                         <dl class="p-profile__contents__wrapper--career">
@@ -53,7 +92,7 @@
                         </dl>
                     </div>
                     <!--写真のwrapper-->
-                    <img class="p-profile__image" src="<?php echo esc_url(get_theme_file_uri('img/profile__image.png'))?>" alt="サイト製作者30代男性笑顔の写真">
+                    <img class="p-profile__image" src="img/profile__image.png" alt="サイト製作者30代男性笑顔の写真">
                     <a class="p-profile__link--sp">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                 </div>
                 <!--両サイドの装飾-->
@@ -63,9 +102,6 @@
             <!--section区切りのボーダー-->
             <div class="u-margin__section-border"><span class="c-section-border"></span></div>
             <!--スキル-->
-            <!--アンカーリンクずれ対策用の要素-->
-            <div id="skill" class="p-skill__anchor"></div>
-            <!--アンカーリンクずれ対策用の要素-->
             <article class="p-skill">
                 <!--中央部分のcontainer-->
                 <div class="p-skill__container">
@@ -140,24 +176,86 @@
                     <p class="p-works__text">今までの制作事例です</p>
                     <div class="p-works__card__container--1st">
                         <article class="p-works__card__wrapper">
-                        <?php if(have_posts()):?>
-                        <!--記事があるかどうかの判定-->
-                        <!--ループ開始 archive.phpを読み込む-->
-                        <?php
-                            while(have_posts()):
-                                the_post();
-                                get_template_part('archive');
-                            endwhile;
-                        else:
-                            echo'記事はありません';
-                        endif
-                        ?>
+                            <a class="p-works__card" href="#">
+                                <div class="p-works__card__image--portfolio"><span class="c-works__card__role">Design&amp;Coding</span></div>
+                                <h3 class="p-works__card__caption">ポートフォリオサイト</h3>
+                            </a>
+                        </article>
+                        <article class="p-works__card__wrapper">
+                            <a class="p-works__card" href="https://raisetech-hamburger.com/">
+                                <div class="p-works__card__image--hamburger"><span class="c-works__card__role">Coding</span></div>
+                                <h3 class="p-works__card__caption">スクール課題<br>ハンバーガーショップサイト</h3>
+                            </a>
+                        </article>
+                        <article class="p-works__card__wrapper">
+                            <a class="p-works__card" href="https://narumiyamazaki.github.io/Portfolio__demo-web-production-company_open/">
+                                <div class="p-works__card__image--web-production-company"><span class="c-works__card__role">Coding</span></div>
+                                <h3 class="p-works__card__caption">デモサイト<br>Web制作会社コーポレートサイト</h3>
+                            </a>
                         </article>
                     </div>
-                <div class="p-top-page__side--left"><span class="c-side__text">works</span></div>
-                <div class="p-top-page__side--right"><span class="c-side__text">works</span></div>
+                    <div class="p-works__card__container--2nd">
+                        <article class="p-works__card__wrapper">
+                            <a class="p-works__card" href="">
+                                <div class="p-works__card__image--RaiseTech-web-banner"><span class="c-works__card__role">Design</span></div>
+                                <h3 class="p-works__card__caption">スクール課題<br>RaiseTech&nbsp;Web出稿バナー</h3>
+                            </a>
+                        </article>
+                        <article class="p-works__card__wrapper">
+                            <a class="p-works__card" href="">
+                                <div class="p-works__card__image--RaiseTech-sns-banner"><span class="c-works__card__role">Design</span></div>
+                                <h3 class="p-works__card__caption">スクール課題<br>RaiseTech&nbsp;インスタ出稿バナー</h3>
+                            </a>
+                        </article>
+                        <article class="p-works__card__wrapper">
+                            <a class="p-works__card" href="">
+                                <div class="p-works__card__image--miraini-logo"><span class="c-works__card__role">Design</span></div>
+                                <h3 class="p-works__card__caption">スクール課題<br>調剤薬局ロゴ</h3>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <div class="p-top-page__side--left"><span class="c-side__text">profile</span></div>
+                <div class="p-top-page__side--right"><span class="c-side__text">profile</span></div>
             </article>
         </main>
-    <?php get_footer(); ?>
+        <footer class="l-footer">
+            <div class="p-footer__container">
+                <!--左側のテキスト-->
+                <div class="p-footer__text__wrapper">
+                    <h2 class="p-footer__heading2--English">Contact<span class="p-footer__heading2--Japanese">お問い合わせ</span></h2>
+                    <p class="p-footer__text">お仕事のご依頼やご相談は<br>こちらのフォームからお願いいたします。</p>
+                    <p class="p-footer__text"><span class="c-asterisk">&lowast;</span>のついている枠は回答必須項目です。</p>
+                </div>
+                <!--右側のフォーム-->
+                <form class="p-footer__form" action="" method="get" >
+                    <!--お名前-->
+                    <div class="p-footer__form__item__wrapper">
+                        <span class="c-asterisk">&lowast;</span><label class="p-footer__form__label" for="name">お名前</label>
+                    </div>
+                    <input class="p-footer__form__input--name" type="text" name="name">
+                    <!--会社名(団体名)-->
+                    <label class="p-footer__form__label" for="company">会社名&lpar;団体名&rpar;</label>
+                    <input class="p-footer__form__input--company" type="text" name="company">
+                    <!--メールアドレス-->
+                    <div class="p-footer__form__item__wrapper">
+                        <span class="c-asterisk">&lowast;</span><label class="p-footer__form__label" for="email">メールアドレス</label>
+                    </div>
+                    <input class="p-footer__form__input--email" type="email" name="email">
+                    <!--お問い合わせ内容-->
+                    <div class="p-footer__form__item__wrapper">
+                        <span class="c-asterisk">&lowast;</span><label class="p-footer__form__label" for="textarea">お問い合わせ内容</label>
+                    </div>
+                    <textarea class="p-footer__form__textarea" name="textarea"></textarea>
+                    <button class="p-footer__form__button" type="submit">送信</button>
+                </form>
+            </div>
+            <div class="p-footer__copyright">
+                <p class="p-footer__copyright__text">copyright&nbsp;&copy;narumi,All&nbsp;rights&nbsp;reserved.</p>
+            </div>
+        </footer>
+    <script src="js/on.click.js"></script>
+    <script src="js/width.js"></script>
+    <script src="js/nav-height.js"></script>
 	</body>
 </html>
