@@ -80,3 +80,11 @@ function create_post_type() {
       );
 }
 add_action( 'init', 'create_post_type' );
+
+//the_post_thumbnailのwidth heightの指定を消す
+function custom_attribute( $html ){
+    // width height を削除する
+    $html = preg_replace('/(width|height)="\d*"\s/', '', $html);
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'custom_attribute' );

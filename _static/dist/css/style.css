@@ -112,6 +112,10 @@ nav ul {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -128,6 +132,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -612,6 +617,9 @@ body {
   display: block;
   position: relative;
 }
+.p-header__nav__main-menu__item--other > .p-header__nav__main-menu__item-link:visited {
+  color: #FAFF0D;
+}
 .p-header__nav__main-menu__item--other > .p-header__nav__main-menu__item-link::after {
   content: "";
   position: absolute;
@@ -716,6 +724,9 @@ body {
 .p-header__nav__main-menu__item-link {
   display: block;
   position: relative;
+}
+.p-header__nav__main-menu__item-link:visited {
+  color: #08144B;
 }
 .p-header__nav__main-menu__item-link::after {
   content: "";

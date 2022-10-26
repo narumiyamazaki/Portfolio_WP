@@ -21,23 +21,26 @@
     //aタグ
     display: block;
     position:relative;
+    &:visited{
+        color: va.$sub-color-y;        
+    }
 //a下線
-&::after{
-    content: "";
-    position:absolute;
-    left:0px;
-    //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
-    bottom: 4px;
-    height: 3px;
-    background: va.$sub-color-y;
-    transform: scale(0,1);
-    transform-origin: right top;
-    transition: transform .1s;
-    width:100%;
-}
-&:hover::after{
-    //width:calc(100% - 16rem);
-    transform-origin: left top;
-    transform: scale(1, 1);
-}
+    &::after{
+        content: "";
+        position:absolute;
+        left:0px;
+        //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
+        bottom: 4px;
+        height: 3px;
+        background: va.$sub-color-y;
+        transform: scale(0,1);
+        transform-origin: right top;
+        transition: transform .1s;
+        width:100%;
+    }
+    &:hover::after{
+        //width:calc(100% - 16rem);
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
 }

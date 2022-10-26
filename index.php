@@ -140,20 +140,21 @@
                     <p class="p-works__text">今までの制作事例です</p>
                     <div class="p-works__card__container--1st">
                         <article class="p-works__card__wrapper">
-                        <?php if(have_posts()):?>
-                        <!--記事があるかどうかの判定-->
-                        <!--ループ開始 archive.phpを読み込む-->
-                        <?php
-                            while(have_posts()):
-                                the_post();
-                                get_template_part('archive');
-                            endwhile;
-                        else:
-                            echo'記事はありません';
-                        endif
-                        ?>
+                            <?php if(have_posts()):?>
+                            <!--記事があるかどうかの判定-->
+                            <!--ループ開始 archive.phpを読み込む-->
+                            <?php
+                                while(have_posts()):
+                                    the_post();
+                                    get_template_part('archive');
+                                endwhile;
+                            else:
+                                echo'記事はありません';
+                            endif;
+                            ?>
                         </article>
                     </div>
+                </div>
                 <div class="p-top-page__side--left"><span class="c-side__text">works</span></div>
                 <div class="p-top-page__side--right"><span class="c-side__text">works</span></div>
             </article>

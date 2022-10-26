@@ -4,6 +4,9 @@
     //aタグ
         display: block;
         position:relative;
+        &:visited{
+            color: va.$main-color;
+        }
     //a下線
     &::after{
         content: "";
