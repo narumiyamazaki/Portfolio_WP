@@ -140,18 +140,22 @@
                     <p class="p-works__text">今までの制作事例です</p>
                     <div class="p-works__card__container--1st">
                         <article class="p-works__card__wrapper">
-                            <?php if(have_posts()):?>
-                            <!--記事があるかどうかの判定-->
-                            <!--ループ開始 archive.phpを読み込む-->
+                            <!--カスタム投稿を取得する-->
                             <?php
-                                while(have_posts()):
-                                    the_post();
-                                    get_template_part('archive');
-                                endwhile;
-                            else:
-                                echo'記事はありません';
-                            endif;
+                            //取得する記事の条件
+                            $args = array(
+                                'post_type' => 'works',//取得する投稿タイプのスラッグ
+                            );
+                            $my_query = new WP_Query($args);
                             ?>
+                            <?php if($my_query->have_posts()): ?> 
+                                <?php while($my_query->have_posts()): 
+                                            $my_query->the_post(); 
+                                            get_template_part('archive-works');                            
+                                    endwhile;
+                                    endif; ?>
+                            <!--グローバル変数$postをリセット(必須)-->
+                            <?php wp_reset_postdata(); ?>
                         </article>
                     </div>
                 </div>
