@@ -9,4 +9,11 @@
         flex-direction: column;
         width: auto;
     }
+    @include mixin.mq(tb){
+        width:calc(800/1023*100vw);
+        justify-content: space-between;
+    }
+     @include mixin.mq(pc){
+        width:calc(920/1440*100vw);
+    }
 }

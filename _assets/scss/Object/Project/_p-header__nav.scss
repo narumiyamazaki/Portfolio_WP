@@ -1,14 +1,13 @@
 @use '../../Foundation/mixin';
 
 .p-header__nav{
-    display: none;
     position:absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
+    //top: 80px;
+    //left: 0;
+    //right: 0;
     background-color: #fff;
-    @include mixin.mq(tb){
-        display:block;
+    @include mixin.mq(sp){
+        display:none;
         position: static;
         
     }

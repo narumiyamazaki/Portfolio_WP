@@ -1,4 +1,5 @@
 @use "../../Foundation/vars" as va;
+@use '../../../scss/Foundation/mixin';
 
 .p-header__nav__main-menu__item-link{
     //aタグ
@@ -6,6 +7,9 @@
         position:relative;
         &:visited{
             color: va.$main-color;
+            @include mixin.mq(sp){
+                color: va.$sub-color-y;
+            }
         }
     //a下線
     &::after{

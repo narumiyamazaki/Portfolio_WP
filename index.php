@@ -48,9 +48,9 @@
                             <div class="p-profile__career--wrapper">
                                 <dd class="p-profile__career--top">2020年9月コーディング学習を開始<br>案件をこなす内に、コーダーであってもコーディングの知識だけではなく、デザインの知識を深める事の重要性を感じるようになりました。</dd>
                                 <dd class="p-profile__career--bottom">2022年4月デザイン学習を開始<br>デザインの考え方、ツールの使い方<br>Webサイト作成を学びました。</dd>
-                                <a class="p-profile__link">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                             </div>
                         </dl>
+                        <a class="p-profile__link">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                     </div>
                     <!--写真のwrapper-->
                     <img class="p-profile__image" src="<?php echo esc_url(get_theme_file_uri('img/profile__image.png'))?>" alt="サイト製作者30代男性笑顔の写真">
@@ -139,24 +139,24 @@
                     <h2 class="p-works__heading2--English">Works<span class="p-works__heading2--Japanese">作品事例</span></h2>
                     <p class="p-works__text">今までの制作事例です</p>
                     <div class="p-works__card__container--1st">
-                        <article class="p-works__card__wrapper">
-                            <!--カスタム投稿を取得する-->
-                            <?php
-                            //取得する記事の条件
-                            $args = array(
-                                'post_type' => 'works',//取得する投稿タイプのスラッグ
-                            );
-                            $my_query = new WP_Query($args);
-                            ?>
-                            <?php if($my_query->have_posts()): ?> 
-                                <?php while($my_query->have_posts()): 
-                                            $my_query->the_post(); 
-                                            get_template_part('archive-works');                            
-                                    endwhile;
-                                    endif; ?>
-                            <!--グローバル変数$postをリセット(必須)-->
-                            <?php wp_reset_postdata(); ?>
-                        </article>
+                        <!--カスタム投稿を取得する-->
+                        <?php
+                        //取得する記事の条件
+                        $args = array(
+                            'post_type' => 'works',//取得する投稿タイプのスラッグ
+                        );
+                        $my_query = new WP_Query($args);
+                        //テンプレート先で変数を呼び出せるようにする
+                        set_query_var( 'my_query', $my_query );
+                        ?>
+                        <?php if($my_query->have_posts()): ?> 
+                            <?php while($my_query->have_posts()): 
+                                        $my_query->the_post(); 
+                                        get_template_part('archive-works');                            
+                                endwhile;
+                                endif; ?>
+                        <!--グローバル変数$postをリセット(必須)-->
+                        <?php wp_reset_postdata(); ?>
                     </div>
                 </div>
                 <div class="p-top-page__side--left"><span class="c-side__text">works</span></div>
@@ -164,5 +164,6 @@
             </article>
         </main>
     <?php get_footer(); ?>
+    <?php wp_footer(); ?>
 	</body>
 </html>

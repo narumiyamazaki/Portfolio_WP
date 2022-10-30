@@ -29,17 +29,16 @@
                         'add_li_class' => 'p-header__nav__main-menu__item',
                     ));
                 ?>
-                <!--PC・TB用のnavメニュー
-                <nav class="p-header__nav">
-                    <ul class="p-header__nav__main-menu">
-                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--profile" href="#">Profile</a></li>
-                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--skill" href="#">Skill</a></li>
-                        <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--works" href="#">Works</a></li>
-                        <li class="p-header__nav__main-menu__item--other"><a class="p-header__nav__main-menu__item--contact" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                -->
-                <!--SP用のnavメニュー-->
+                  <?php 
+                    wp_nav_menu( array(
+                        'theme_location' => 'header_nav_sp',
+                        'container' => 'nav',
+                        'container_class' => 'p-header__nav--sp',
+                        'menu_class' => 'p-header__nav__main-menu--sp',
+                        'add_li_class' => 'p-header__nav__main-menu__item',
+                    ));
+                ?>
+                <!--SP用のnavメニュー
                 <nav class="p-header__nav--sp">
                     <ul class="p-header__nav__main-menu--sp">
                         <li class="p-header__nav__main-menu__item"><a class="p-header__nav__main-menu__item--profile" href="#">Top</a></li>
@@ -49,5 +48,6 @@
                         <li class="p-header__nav__main-menu__item--other"><a class="p-header__nav__main-menu__item--contact" href="#">Contact</a></li>
                     </ul>
                 </nav>
+                -->
             </div>
         </header>

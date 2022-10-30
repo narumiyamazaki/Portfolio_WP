@@ -2,6 +2,7 @@
 
 .p-profile__contents__wrapper{
     margin-right:40px;
+    width: calc(400/1440*100vw);
     @include mixin.mq(sp){
         margin:0;
     }

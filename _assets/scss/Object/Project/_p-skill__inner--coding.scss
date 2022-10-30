@@ -1,0 +1,10 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-skill__inner--coding{
+    @include mixin.mq(tb){
+        width: calc(300/1023*100vw);
+    }
+    @include mixin.mq(pc){
+        width:calc(425/1440*100vw)
+    }
+}

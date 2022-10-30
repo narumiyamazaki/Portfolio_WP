@@ -9,7 +9,11 @@
     justify-content: center;
     align-items: center;
     background: #E0E0E0;
+    position:absolute;
+    right:0;
+    bottom:0;
     padding:calc(16/1440*100vw);
+    color:#000;
     @include mixin.mq(sp){
         padding:calc(16/375*100vw);
     }

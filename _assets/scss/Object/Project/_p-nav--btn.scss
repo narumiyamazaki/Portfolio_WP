@@ -3,14 +3,16 @@
 
 
 .p-nav--btn {
-    @include mixin.mq(tb){
-        display: none;
+    display: none;
+    @include mixin.mq(sp){
+        display: block;
     }
     > a {
         display: block;
         position: relative;
         width: 60px;
         height: 60px;
+
         background-color: va.$main-color;
         //モーダルの時にボタンを背景の上に出す
         &.open{

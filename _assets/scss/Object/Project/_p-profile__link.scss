@@ -4,63 +4,74 @@
 .p-profile__link{
     font-family: va.$font-base-Japanese;
     color: va.$main-color;
-    font-size:16px;
-    //font-size:calc(16/1440*100vw);
+    //font-size:16px;
+    font-size:max(calc(16/1440*100vw),16px);
     font-weight: bold;
     border:1px solid;
     border-radius: 30px;
     display: block;
-    height:48px;
-    //height: calc(48/1440*100vw);
+    //height:48px;
+    height: calc(48/1440*100vw);
     //height: max(calc(48/1440*100vw),48px);
-    padding:12px 0;
-    //padding:calc(12/1440*100vw) 0;
+    //padding:12px 0;
+    padding:calc(12/1440*100vw) 0;
     text-align: center;
     //矢印配置のため
     position:relative;
-   //a下線
-   @include mixin.mq(sp){
-    display: none;
+   @include mixin.mq(tb){
+    font-size:max(calc(14/1023*100vw),14px);
+    padding:calc(6/1023*100vw) 0;
+    height:calc(40/1023*100vw);
+    padding:calc(12/1440*100vw) 0;
    }
-   &::after{
-   content: "";
-   position:absolute;
-   left:65px;
-   //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
-   bottom: 7px;
-   height: 1px;
-   background: va.$sub-color-y;
-   transform: scale(0,1);
-   transform-origin: right top;
-   transition: transform .1s;
-   width:191px;
-   //width:calc(191/1440*100vw);
-&:hover::after{
-   //width:calc(100% - 16rem);
-   transform-origin: left top;
-   transform: scale(1, 1);
-  }
-    &:hover{
-        background-color: va.$main-color;
-        color:va.$sub-color-y;
-        border:1px solid #08144B;
-        & .p-profile__link__arrow{
-            border-top: solid 1px #FAFF0D;
-            border-right: solid 1px #FAFF0D;
-        }
-        & .p-profile__link__arrow::before{
-            content:'';
-            width:12px;
-            //width:calc(12/1440*100vw);
-            height:1px;
-            background-color: va.$sub-color-y;
+    //a下線
+    &::after{
+        display: none;
+        @include mixin.mq(pc){
+            display: block;
+            content: "";
             position:absolute;
-            right:-2px;
-            //right:-calc(2/1440*100vw);
-            bottom:3.5px;
-            //bottom:calc(3.5/1440*100vw);
-            transform: rotate(-45deg);
+            left:calc(65/1440*100vw);
+            //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
+            bottom: 7px;
+            height: 1px;
+            background: va.$sub-color-y;
+            transform: scale(0,1);
+            transform-origin: right top;
+            transition: transform .1s;
+            width:calc(251/1440*100vw);
+            //width:calc(191/1440*100vw);
         }
-     }
-   }
+    }
+    &:hover::after{
+        //width:calc(100% - 16rem);
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+   //hover時の色替え
+   &:hover{
+    background-color: va.$main-color;
+    color:va.$sub-color-y;
+    border:1px solid #08144B;
+    & .p-profile__link__arrow{
+        border-top: solid 1px #FAFF0D;
+        border-right: solid 1px #FAFF0D;
+        }
+    /*矢印
+    & .p-profile__link__arrow::before{
+        content:'';
+        width:12px;
+        //width:calc(12/1440*100vw);
+        height:1px;
+        background-color: va.$sub-color-y;
+        position:absolute;
+        right:-2px;
+        //right:-calc(2/1440*100vw);
+        bottom:3.5px;
+        //bottom:calc(3.5/1440*100vw);
+        transform: rotate(-45deg);
+        }
+    }
+    */
+    }
 }

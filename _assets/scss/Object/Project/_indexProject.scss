@@ -68,6 +68,7 @@
 //coding
 @use './p-skill__anchor';
 @use './p-skill';
+@use './p-skill__inner--coding';
 @use './p-skill__container';
 @use './p-skill__heading2--English';
 @use './p-skill__heading2--Japanese';
@@ -96,6 +97,8 @@
 @use './p-works__text';
 @use './p-works__container';
 @use './p-works__card__container--1st';
+@use './p-works__card__image';
+@use './p-works__card__image__wrapper';
 @use './p-works__card__image--portfolio';
 @use './p-works__card__image--hamburger';
 @use './p-works__card__image--web-production-company';

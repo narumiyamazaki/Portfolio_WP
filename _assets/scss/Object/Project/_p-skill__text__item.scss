@@ -5,6 +5,9 @@
     font-family: va.$font-base-Japanese;
     font-size:max(calc(16/1440*100vw),14px);
     color:va.$sub-color-w;
+    @include mixin.mq(tb){
+        font-size:max(calc(16/1023*100vw),16px);
+    }
     @include mixin.mq(sp){
         font-size:max(calc(14/375*100vw),14px);
     }

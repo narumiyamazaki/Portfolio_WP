@@ -1,15 +1,33 @@
+@use '../../../scss/Foundation/mixin';
+
 .p-profile__link__arrow{
     display: block;
     border-top: solid 1px #08144B;
     border-right: solid 1px #08144B;
-    width: 9px;
-    //width: calc(9/1440*100vw);
-    height:9px;
-    //height: calc(9/1440*100vw);
+    //width: 9px;
+    width: calc(9/1440*100vw);
+    //height:9px;
+    height: calc(9/1440*100vw);
     transform: rotate(45deg);
     position:absolute;
-    right:27.27px;
-    //right:calc(27.27/1440*100vw);
-    bottom:17.27px;
-    //bottom:calc(17.27/1440*100vw);
+    //right:27.27px;
+    right:calc(27.27/1440*100vw);
+    //bottom:17.27px;
+    bottom:calc(17.27/1440*100vw);
+    @include mixin.mq(tb){
+        width: calc(7/1023*100vw);
+        height: calc(7/1023*100vw);
+        right:calc(11.27/1023*100vw);
+        bottom:calc(14.27/1023*100vw);
+    }
+    @include mixin.mq(pc){
+        //width: 9px;
+        width: calc(9/1440*100vw);
+        //height:9px;
+        height: calc(9/1440*100vw);
+        //right:27.27px;
+        right:calc(27.27/1440*100vw);
+        //bottom:17.27px;
+        bottom:calc(17.27/1440*100vw);
+    }
 }

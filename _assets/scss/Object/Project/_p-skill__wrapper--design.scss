@@ -3,7 +3,7 @@
 .p-skill__wrapper--design{
     display: flex;
     justify-content: space-between;
-    @include mixin.mq(sp){
+    @include mixin.mq(tb){
         flex-direction: column;
     }
 }
