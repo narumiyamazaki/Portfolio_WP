@@ -7,8 +7,12 @@
     max-height: 560px;
     border:10px solid #08144B;
     border-radius: 100px;
+    @include mixin.mq(tb){
+        width:calc(400/1023*100vw);
+        height: calc(400/1023*100vw);
+    }
     @include mixin.mq(sp){
-        width:calc(343/375*100vw);
+        width:calc(328/375*100vw);
         height:calc(343/375*100vw);
         margin-bottom:calc(24/375*100vw);
        }

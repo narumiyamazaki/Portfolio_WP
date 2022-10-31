@@ -24,6 +24,9 @@
     height:calc(40/1023*100vw);
     padding:calc(12/1440*100vw) 0;
    }
+   @include mixin.mq(sp){
+    display: none;
+   }
     //a下線
     &::after{
         display: none;

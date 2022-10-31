@@ -2,9 +2,10 @@
 @use '../../Foundation/mixin';
 
 .p-main-visual__text--English--sp{
+    display: none;
     font-family: va.$font-base-English;
     font-size: max(calc(14/375*100vw),14px);
-    @include mixin.mq(tb){
-        display: none;
+    @include mixin.mq(sp){
+        display: block;
     }
 }

@@ -6,6 +6,9 @@
     justify-content: space-between;
     width:calc(303/1440*100vw);
     margin-bottom:calc(40/1440*100vw);
+    @include mixin.mq(tb){
+        width: calc(300/1023*100vw);
+    }
     @include mixin.mq(sp){
         width:calc(243/375*100vw);
         margin:0 auto calc(40/375*100vw);
