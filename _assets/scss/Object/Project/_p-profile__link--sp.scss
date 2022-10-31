@@ -13,7 +13,7 @@
     //display: block;
     //height:48px;
     //height: calc(48/1440*100vw);
-    height: max(calc(40/375*100vw),48px);
+    height: calc(40/375*100vw);
     //padding:12px 0;
     padding:calc(12/375*100vw) 0;
     text-align: center;

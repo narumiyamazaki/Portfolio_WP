@@ -50,11 +50,14 @@
                                 <dd class="p-profile__career--bottom">2022年4月デザイン学習を開始<br>デザインの考え方、ツールの使い方<br>Webサイト作成を学びました。</dd>
                             </div>
                         </dl>
-                        <a class="p-profile__link">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
+                        <?php
+                        $page_profile = get_page_by_path('profile');
+                        ?>
+                        <a class="p-profile__link" href="<?php echo esc_url(get_permalink($page_profile -> ID)); ?>">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                     </div>
                     <!--写真のwrapper-->
                     <img class="p-profile__image" src="<?php echo esc_url(get_theme_file_uri('img/profile__image.png'))?>" alt="サイト製作者30代男性笑顔の写真">
-                    <a class="p-profile__link--sp">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
+                    <a class="p-profile__link--sp" href="<?php echo esc_url(get_permalink($page_profile -> ID)); ?>">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                 </div>
                 <!--両サイドの装飾-->
                 <div class="p-top-page__side--left"><span class="c-side__text">profile</span></div>

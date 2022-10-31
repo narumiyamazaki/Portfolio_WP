@@ -10,8 +10,9 @@
     align-items: center;
     background: #E0E0E0;
     position:absolute;
-    right:0;
-    bottom:0;
+    //線の太さ分内側に
+    right:1px;
+    bottom:1px;
     padding:calc(16/1440*100vw);
     color:#000;
     @include mixin.mq(sp){
