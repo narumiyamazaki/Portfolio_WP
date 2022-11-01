@@ -34,7 +34,7 @@
             display: block;
             content: "";
             position:absolute;
-            left:calc(65/1440*100vw);
+            left:calc(100/1440*100vw);
             //bottomはpadding-bottomの16.5remから文字と線の間隔4remを引いたもの
             bottom: 7px;
             height: 1px;
@@ -42,8 +42,8 @@
             transform: scale(0,1);
             transform-origin: right top;
             transition: transform .1s;
-            width:calc(251/1440*100vw);
-            //width:calc(191/1440*100vw);
+            //width:calc(251/1440*100vw);
+            width:calc(196/1440*100vw);
         }
     }
     &:hover::after{

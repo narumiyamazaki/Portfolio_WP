@@ -1412,14 +1412,14 @@ p {
     display: block;
     content: "";
     position: absolute;
-    left: 4.5138888889vw;
+    left: 6.9444444444vw;
     bottom: 7px;
     height: 1px;
     background: #FAFF0D;
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform 0.1s;
-    width: 17.4305555556vw;
+    width: 13.6111111111vw;
   }
 }
 .p-profile__link:hover::after {

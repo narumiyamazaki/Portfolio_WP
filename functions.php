@@ -38,6 +38,7 @@ function custom_theme_support(){
         'footer_nav' => esc_html__('footer navigation','footer-nav'),
         'header_nav' => esc_html__('header navigation','header-nav'),
         'header_nav_sp' => esc_html__('header navigation sp','header-nav-sp'),
+        'header_nav_lower-page' => esc_html__('header navigation lower-page','header-nav-lower-page'),
     ));
     //ブロックエディターの有効化
     add_theme_support('editor-style');
@@ -90,6 +91,24 @@ function create_post_type() {
       );
 }
 add_action( 'init', 'create_post_type' );
+
+//カスタム投稿でタグの追加
+add_action( 'init', function () {
+  register_taxonomy( 'post_tag', [ 'post', 'works' ],
+      [
+          'hierarchical' => false,
+          'query_var'    => 'tag',
+      ]
+  );
+});
+add_action('pre_get_posts', function ($query){
+  if ( is_admin() && ! $query->is_main_query() ) {
+      return;
+  }
+  if ( $query->is_category() || $query->is_tag() ) {
+      $query->set('post_type', ['post','works']);
+  }
+});
 
 //the_post_thumbnailのwidth heightの指定を消す
 function custom_attribute( $html ){

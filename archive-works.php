@@ -1,4 +1,4 @@
-<a class="p-works__card"  href="<?php echo esc_url(get_permalink())?>">
+<a class="p-works__card"  href="<?php echo esc_url(get_post_permalink())?>">
     <div class="p-works__card__image__wrapper">
         <?php $url = wp_get_attachment_url( get_post_thumbnail_id($my_query->ID) ); ?>
         <?php echo ('<div class="p-works__card__image" style="background-image: url('. $url.')"></div>'); ?>    
