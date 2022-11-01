@@ -11,8 +11,8 @@
     background: #E0E0E0;
     position:absolute;
     //線の太さ分内側に
-    right:1px;
-    bottom:1px;
+    right:0px;
+    bottom:0px;
     padding:calc(16/1440*100vw);
     color:#000;
     @include mixin.mq(sp){

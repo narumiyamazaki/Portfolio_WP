@@ -1816,7 +1816,6 @@ p {
   align-items: flex-end;
   width: 19.4444444444vw;
   height: 19.4444444444vw;
-  border: 1px #000 solid;
   position: static;
   z-index: 0;
   background-size: cover;
@@ -1834,6 +1833,8 @@ p {
 
 .p-works__card__image__wrapper {
   margin-bottom: 2.2222222222vw;
+  border: 1px #000 solid;
+  overflow: hidden;
   position: relative;
 }
 .p-works__card__image--portfolio {
@@ -3097,8 +3098,8 @@ p {
   align-items: center;
   background: #E0E0E0;
   position: absolute;
-  right: 1px;
-  bottom: 1px;
+  right: 0px;
+  bottom: 0px;
   padding: 1.1111111111vw;
   color: #000;
 }

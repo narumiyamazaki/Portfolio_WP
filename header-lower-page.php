@@ -21,5 +21,15 @@
                         'add_li_class' => 'p-header__nav__main-menu__item',
                     ));
                 ?>
+                 <?php 
+                    wp_nav_menu( array(
+                        'theme_location' => 'header_nav_sp',
+                        'container' => 'nav',
+                        'container_class' => 'p-header__nav--sp',
+                        'menu_class' => 'p-header__nav__main-menu--sp',
+                        'add_li_class' => 'p-header__nav__main-menu__item',
+                    ));
+                ?>
             </div>
         </header>
+	</body>
