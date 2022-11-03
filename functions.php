@@ -117,3 +117,95 @@ function custom_attribute( $html ){
     return $html;
 }
 add_filter( 'post_thumbnail_html', 'custom_attribute' );
+
+/*
+ * カスタムフィールド
+
+
+function add_custom_fields(){
+  add_meta_box(
+      'custom_setting', //編集画面セクションのHTML ID
+      'カスタム情報', //編集画面セクションのタイトル、画面上に表示される
+      'insert_custom_fields', //編集画面セクションにHTML出力する関数
+      'works', //投稿タイプ名
+      'normal' //編集画面セクションが表示される部分
+  );
+}
+add_action('admin_menu', 'add_custom_fields');
+
+function custom_metabox_edit_form_tag(){
+echo ' enctype="multipart/form-data"';
+}
+//画像をアップする場合は、multipart/form-dataの設定が必要なので、post_edit_form_tagをフックしてformタグに追加
+add_action('post_edit_form_tag', 'custom_metabox_edit_form_tag');
+
+// カスタムフィールドの入力エリア
+function insert_custom_fields(){
+  global $post;
+  //get_post_meta関数を使ってpostmeta情報を取得
+  $works_name = get_post_meta(
+                   $post->ID, //投稿ID
+                   'works_name', //キー名
+                   true //戻り値を文字列にする場合true(falseの場合は配列)
+               );
+  $works_thumbnail = get_post_meta($post->ID,'works_thumbnail',true);
+  echo '名前： <input type="text" name="works_name" value="'.$works_name.'" /><br>';
+  echo '画像： <input type="file" name="works_thumbnail" accept="image/*" /><br>';
+  if(isset($works_thumbnail) && strlen($works_thumbnail) > 0){
+      //works_thumbnailキーのpostmeta情報がある場合は、画像を表示
+      //$works_thumbnailには、後述するattach_idが格納されているので、wp_get_attachment_url関数にそのattach_idを渡して画像のURLを取得する
+      echo '<img style="width: 200px;display: block;margin: 1em;" src="'.wp_get_attachment_url($works_thumbnail).'">';
+  }
+}
+function save_custom_fields( $post_id ) {
+  if(isset($_POST['works_name'])){
+      //works_nameキーで、$_POST['works_name']を保存
+      update_post_meta($post_id, 'works_name', $_POST['works_name']);
+  }else{
+      //works_nameキーの情報を削除
+      delete_post_meta($post_id, 'works_name');
+  }
+
+  if(isset($_FILES['works_thumbnail']) && $_FILES["works_thumbnail"]["size"] !== 0){
+      $file_name = basename($_FILES['works_thumbnail']['name']);
+      $file_name = trim($file_name);
+      $file_name = str_replace(" ", "-", $file_name);
+
+      $wp_upload_dir = wp_upload_dir(); //現在のuploadディクレトリのパスとURLを入れた配列
+      $upload_file = $_FILES['works_thumbnail']['tmp_name'];
+      $upload_path = $wp_upload_dir['path'].'/'.$file_name; //uploadsディレクトリ以下などに配置する場合は$wp_upload_dir['basedir']を利用する
+      //画像ファイルをuploadディクレトリに移動させる
+      move_uploaded_file($upload_file,$upload_path);
+
+      $file_type = $_FILES['works_thumbnail']['type'];
+      //正規表現で拡張子なしのスラッグ名を生成
+      $slug_name = preg_replace('/\.[^.]+$/', '', basename($upload_path));
+
+      if(file_exists($upload_path)){
+          //保存に成功してファイルが存在する場合は、wp_postsテーブルなどに情報を追加
+          $attachment = array(
+              'guid'           => $wp_upload_dir['url'].'/'.basename($file_name), 
+              'post_mime_type' => $file_type, 
+              'post_title' => $slug_name, 
+              'post_content' => '', 
+              'post_status' => 'inherit'
+          );
+          //添付ファイルを追加
+          $attach_id = wp_insert_attachment($attachment,$upload_path,$post_id);
+          if(!function_exists('wp_generate_attachment_metadata')){
+              require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+          }
+          //添付ファイルのメタデータを生成し、wp_postsテーブルに情報を保存
+          $attach_data = wp_generate_attachment_metadata($attach_id,$upload_path);
+          wp_update_attachment_metadata($attach_id,$attach_data);
+          //wp_postmetaテーブルに画像のattachment_id(wp_postsテーブルのレコードのID)を保存
+          update_post_meta($post_id, 'works_thumbnail',$attach_id);
+      }else{
+          //保存失敗
+          echo '画像保存に失敗しました';
+          exit;
+      }
+  }
+}
+add_action('save_post', 'save_custom_fields');
+ */
