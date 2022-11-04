@@ -11,11 +11,15 @@
                 </h3>
                 <span class="c-works__role">Coding&amp;Design</span>
             </div>
-            <a class="p-link__work" href="#">Webサイトへ移動する&gt;</a>
+            <a class="p-link__work" href="<?php echo esc_url(post_custom('URL')); ?>">Webサイトへ移動する&gt;</a>
+            <?php
+            $image_attributes01 = wp_get_attachment_image_src(get_post_meta($post->ID,'image_sample',true),'thumbnail');
+            ?>
             <img class="p-works__thumbnail--web-site" src="img/works-thumbnail-portfolio.png" alt="ポートフォリオサイトビジュアル部分">
             <div class="p-works__thumbnail__box"></div>
             <div class="p-works__content__text__wrapper">
                 <?php 
+                    //本文記事の取得
                     $content_string = get_the_content();
                     $content_string = str_replace('<p>','<p class="p-works__content__text"><span class="u-margin-16px"></span>',$content_string); 
                     echo $content_string;
