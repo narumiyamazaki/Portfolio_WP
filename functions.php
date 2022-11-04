@@ -117,4 +117,3 @@ function custom_attribute( $html ){
     return $html;
 }
 add_filter( 'post_thumbnail_html', 'custom_attribute' );
-
