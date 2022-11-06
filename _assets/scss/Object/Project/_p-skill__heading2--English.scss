@@ -6,6 +6,7 @@
     font-family: va.$font-base-English;
     font-size:calc(56/1440*100vw);
     margin-bottom:calc(8/1440*100vw)8px;
+    font-weight: 400;
     @include mixin.mq(sp){
         font-size:max(calc(48/375*100vw),48px);
         margin-bottom:calc(16/375*100vw);

@@ -17,5 +17,6 @@
     color:#000;
     @include mixin.mq(sp){
         padding:calc(16/375*100vw);
+        font-size:calc(14/375*100vw);
     }
 }

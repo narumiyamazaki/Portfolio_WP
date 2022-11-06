@@ -1,0 +1,12 @@
+@use '../../../scss/Foundation/mixin';
+
+.wp-block-contact-form-7-contact-form-selector{
+    width: auto;
+    overflow: hidden;
+    @include mixin.mq(tb){
+        width: calc(500/1023*100vw);
+    }
+    @include mixin.mq(pc){
+        width: calc(520/1440*100vw);
+    }
+}

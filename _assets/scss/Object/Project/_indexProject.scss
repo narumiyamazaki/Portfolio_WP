@@ -179,7 +179,8 @@
 @use './p-works__container--lower-page';
 @use './p-works__heading2__English--lower-page';
 @use './p-works__heading2__Japanese--lower-page';
-@use './p-link__work';
+@use './p-link__work--web-site';
+@use './p-link__work--design';
 @use './p-works__heading3__lower-page__wrapper--web-site';
 @use './p-works__heading3__lower-page__wrapper--design';
 @use './p-works__heading3--lower-page';
@@ -203,3 +204,6 @@
 @use './p-quote__list';
 @use './p-quote__text';
 @use './p-quote__text--last';
+
+//Contact Form 7用
+@use './wp-block-contact-form-7-contact-form-selector';

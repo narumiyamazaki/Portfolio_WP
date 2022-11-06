@@ -3,3 +3,5 @@
         <p class="p-footer__copyright__text">copyright&nbsp;&copy;narumi,All&nbsp;rights&nbsp;reserved.</p>
     </div>
 </footer>
+<?php wp_footer(); ?>
+</body>

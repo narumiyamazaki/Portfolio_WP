@@ -2,6 +2,7 @@
 @use '../../../scss/Foundation/mixin';
 
 .p-profile__about-me__heading2--English{
+    font-weight: 400;
     color: va.$main-color;
     font-family: va.$font-base-English;
     font-size:calc(56/1440*100vw);

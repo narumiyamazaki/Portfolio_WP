@@ -7,6 +7,7 @@
     </head>
 	<body>
     <?php wp_body_open(); ?>
+    <!--条件分岐させる-->
         <header class="l-header">
             <div class="p-header--link">
                 <p class="p-nav--btn">
@@ -32,4 +33,5 @@
                 ?>
             </div>
         </header>
-	</body>
+        <?php custom_breadcrumb(); ?>
+	

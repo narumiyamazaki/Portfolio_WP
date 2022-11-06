@@ -1195,6 +1195,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 3.8888888889vw;
   margin-bottom: 0.5555555556vw;
+  font-weight: 400;
 }
 @media screen and (max-width: 767px) {
   .p-profile__heading2--English {
@@ -1537,6 +1538,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 3.8888888889vw;
   margin-bottom: 0.5555555556vw 8px;
+  font-weight: 400;
 }
 @media screen and (max-width: 767px) {
   .p-skill__heading2--English {
@@ -1735,6 +1737,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 3.8888888889vw;
   margin-bottom: 0.5555555556vw;
+  font-weight: 400;
 }
 @media screen and (max-width: 767px) {
   .p-works__heading2--English {
@@ -2010,6 +2013,11 @@ p {
 @media screen and (max-width: 767px) {
   .p-footer__text__wrapper {
     margin-bottom: 2.1333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-footer__text__wrapper {
+    width: 42.0332355816vw;
   }
 }
 
@@ -2560,6 +2568,7 @@ p {
 }
 
 .p-profile__about-me__heading2--English {
+  font-weight: 400;
   color: #08144B;
   font-family: "Roboto", sans-serif;
   font-size: 3.8888888889vw;
@@ -2718,7 +2727,7 @@ p {
   }
 }
 
-.p-link__work {
+.p-link__work--web-site {
   font-family: "Noto Serif JP", serif;
   font-size: max(1.1111111111vw, 16px);
   color: #08144B;
@@ -2727,10 +2736,14 @@ p {
   margin-bottom: 12.7777777778vw;
 }
 @media screen and (max-width: 767px) {
-  .p-link__work {
+  .p-link__work--web-site {
     font-size: 4.2666666667vw;
     margin-bottom: 21.3333333333vw;
   }
+}
+
+.p-link__work--design {
+  display: none;
 }
 
 .p-works__heading3__lower-page__wrapper--web-site {
@@ -2982,6 +2995,21 @@ p {
   margin-bottom: max(1.6666666667vw, 24px);
 }
 
+.wp-block-contact-form-7-contact-form-selector {
+  width: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .wp-block-contact-form-7-contact-form-selector {
+    width: 48.8758553275vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-contact-form-7-contact-form-selector {
+    width: 36.1111111111vw;
+  }
+}
+
 .c-section-border {
   width: 63.8888888889vw;
   height: 2px;
@@ -3106,6 +3134,7 @@ p {
 @media screen and (max-width: 767px) {
   .c-works__card__role {
     padding: 4.2666666667vw;
+    font-size: 3.7333333333vw;
   }
 }
 
