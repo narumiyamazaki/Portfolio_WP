@@ -1,8 +1,12 @@
 @use '../../../scss/Foundation/mixin';
 
-.breadcrumb{
+#breadcrumb{
     display: none;
     @include mixin.mq(tb){
-        margin-top:calc()
+        display: block;
+        & > ul{
+            display: flex;
+            padding:0;
+        }
     }
 }

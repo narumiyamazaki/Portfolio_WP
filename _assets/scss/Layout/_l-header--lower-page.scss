@@ -12,5 +12,6 @@
     width: 100%;
     @include mixin.mq(sp){
         width:100vw;
+        justify-content: right;
     }
 }

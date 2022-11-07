@@ -7,8 +7,13 @@
     </head>
 	<body>
     <?php wp_body_open(); ?>
-    <!--条件分岐させる-->
-        <header class="l-header">
+    <!--条件分岐させる class="l-header"-->
+        <header class="<?php if(!is_home() && !is_front_page() ){
+            echo "l-header--lower-page";
+            }else{ 
+            echo "l-header";        
+        } 
+        ?>">
             <div class="p-header--link">
                 <p class="p-nav--btn">
                     <a href="javascript:void(0)"><span>メニューを開く</span></a>
@@ -32,6 +37,8 @@
                     ));
                 ?>
             </div>
+            <div class="p-header__title__wrapper">
+                <p class="p-header__title">narumiのポートフォリオ</p>
+                <?php custom_breadcrumb(); ?>
+            </div>
         </header>
-        <?php custom_breadcrumb(); ?>
-	

@@ -1,11 +1,12 @@
 @use '../../Foundation/mixin';
 
 .p-header__nav{
-    position:absolute;
+    //以下不要？
+    //position:absolute;
     //top: 80px;
     //left: 0;
     //right: 0;
-    background-color: #fff;
+    //background-color: #fff;
     @include mixin.mq(sp){
         display:none;
         position: static;

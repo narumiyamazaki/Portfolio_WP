@@ -560,11 +560,16 @@ p {
 @media screen and (max-width: 767px) {
   .l-header--lower-page {
     width: 100vw;
+    justify-content: right;
   }
 }
 
 .l-main {
   position: relative;
+}
+
+.p-header--link {
+  order: 1;
 }
 
 .p-header--nav--main-menu {
@@ -988,6 +993,11 @@ p {
   order: 0;
   margin-left: 8.3333333333vw;
 }
+@media screen and (max-width: 767px) {
+  .p-header__title__wrapper {
+    display: none;
+  }
+}
 
 .p-nav--btn {
   display: none;
@@ -1054,10 +1064,6 @@ p {
   transform: rotate(-135deg);
 }
 
-.p-header__nav {
-  position: absolute;
-  background-color: #fff;
-}
 @media screen and (max-width: 767px) {
   .p-header__nav {
     display: none;
@@ -3007,6 +3013,19 @@ p {
 @media screen and (min-width: 1024px) {
   .wp-block-contact-form-7-contact-form-selector {
     width: 36.1111111111vw;
+  }
+}
+
+#breadcrumb {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  #breadcrumb {
+    display: block;
+  }
+  #breadcrumb > ul {
+    display: flex;
+    padding: 0;
   }
 }
 
