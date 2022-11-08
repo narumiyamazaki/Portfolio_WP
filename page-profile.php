@@ -4,8 +4,6 @@ Template Name:profile
 */
 ?>
 <?php get_header('lower-page') ?>
-<p class="p-header__title">narumiのポートフォリオ</p>
-<?php custom_breadcrumb(); ?>
     <main class="p-main--lower-page">
         <div class="p-profile__container--lower-page">
             <!--中央部分のwrapper-->
