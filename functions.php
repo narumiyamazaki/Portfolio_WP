@@ -170,8 +170,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   
   //カスタム投稿タイプ名の表示
   echo '<li>'.
-  '<a href="'. $post_type_link .'">'.
-  '<span>'. $post_type_label .'</span>'.
+  '<a href="">'.
   '</a>'.
   '</li>';
   
@@ -221,7 +220,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   $parent_link = esc_url( get_term_link( $parent_id, $the_tax ) );
   $parent_name = esc_html( $parent_term->name );
   echo '<li>'.
-  ' <a href="'. $parent_link .'">'.
+  ' <a href="">'.
   '<span>'. $parent_name .'</span>'.
   '</a> > '.
   '</li>';
@@ -237,7 +236,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   $term_name = esc_html( $term->name );
   // 最下層のタームを表示
   echo '<li>'.
-  ' <a href="'. $term_link .'">'.
+  ' <a href="">'.
   '<span>'. $term_name .'</span>'.
   '</a> > '.
   '</li>';
@@ -264,7 +263,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   $parent_link = esc_url( get_permalink( $parent_id ) );
   $parent_name = esc_html( get_the_title( $parent_id ) );
   echo '<li>'.
-  '<a href="'. $parent_link .'">'.
+  '<a href="">'.
   '<span>'. $parent_name .'</span>'.
   '</a> > '.
   '</li>';
@@ -294,7 +293,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   $parent_link = esc_url( get_term_link( $parent_id, $tax_name ) );
   $parent_name = esc_html( $parent_term->name );
   echo '<li>'.
-  ' <a href="'. $parent_link .'">'.
+  ' <a href="">'.
   '<span>'. $parent_name .'</span>'.
   '</a> > '.
   '</li>';
