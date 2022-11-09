@@ -14,8 +14,10 @@
             <!--タグにWeb-siteがある時かどうかでクラス名を変える-->
             <a class= "<?php if (has_tag('Web-site')){echo "p-link__work--web-site"; } else { echo "p-link__work--design"; } ;?>" href="<?php echo esc_url(post_custom('URL')); ?>">Webサイトへ移動する&gt;</a>
             <?php
+            //カスタムフィールドの変数File Upload Topのオブジェクトを取得
             $image_top = wp_get_attachment_image_src(get_post_meta($post->ID,'File Upload Top',true),'full');
             ?>
+            <!--$image[0]に入っている画像のURLを表示-->
             <img class="p-works__thumbnail--web-site" src="<?php echo esc_url($image_top[0]); ?>" alt="ポートフォリオサイトビジュアル部分">
             <?php
             ?>
