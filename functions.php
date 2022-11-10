@@ -202,7 +202,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
   
   //親リストに含まれないタームのみ取得
   foreach ( $terms as $term ) {
-  if ( ! in_array( $term->term_id, $parents_list ) ) {
+  if ( ! in_array( $term->term_id, $parents_list ,true ) ) {
   $child_terms[] = $term;
   }
   }
