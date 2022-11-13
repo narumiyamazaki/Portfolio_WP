@@ -1,0 +1,16 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__thumbnail__box--square-banner{
+    width:calc(720/1440*100vw);
+    height:calc(544/1440*100vw);
+    background: #D9D9D9;
+    margin-left:calc(-236/1440*100vw);
+    margin-top: calc(-512/1440*100vw);
+    margin-bottom:calc(120/1440*100vw);
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+        height: calc(391/375*100vw);
+        margin-left:calc(0/375*100vw);
+        margin-top:calc(-367/375*100vw);
+    }
+}

@@ -4,6 +4,9 @@
     padding:calc(24/1440*100vw);
     background:#DEDEDE;
     margin-bottom:calc(40/1440*100vw);
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
     @include mixin.mq(sp){
         padding:calc(40/375*100vw) 0;
         margin-bottom:calc(40/375*100vw);

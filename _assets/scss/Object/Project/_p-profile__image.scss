@@ -10,10 +10,14 @@
     @include mixin.mq(tb){
         width:calc(400/1023*100vw);
         height: calc(400/1023*100vw);
+        max-width: none;
+        max-height: none;
     }
     @include mixin.mq(sp){
         width:calc(343/375*100vw);
         height:calc(343/375*100vw);
         margin-bottom:calc(24/375*100vw);
+        max-width: none;
+        max-height: none;
        }
 }

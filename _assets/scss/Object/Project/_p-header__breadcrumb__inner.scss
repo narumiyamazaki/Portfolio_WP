@@ -1,0 +1,12 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-header__breadcrumb__inner{
+    display: flex;
+    padding:0;
+    //gap:8px;
+    //grid-template-columns: 3fr 1fr 3fr;
+    //width: calc(139/1440*100vw);
+    @include mixin.mq(sp){
+        display: none;
+    }
+}

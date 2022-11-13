@@ -532,6 +532,14 @@ p {
   margin: 0;
 }
 
+blockquote {
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
 .l-header {
   display: flex;
   align-items: center;
@@ -834,14 +842,12 @@ p {
   }
 }
 
-.p-header__breadcrumb__wrapper {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 3fr 1fr 3fr;
-  width: 9.6527777778vw;
+.p-header__breadcrumb__inner {
+  display: flex;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
-  .p-header__breadcrumb__wrapper {
+  .p-header__breadcrumb__inner {
     display: none;
   }
 }
@@ -852,22 +858,35 @@ p {
   margin-bottom: 3px;
 }
 
-.p-header__breadcrumb__home {
+.p-header__breadcrumb--home {
   font-family: "Roboto", sans-serif;
   font-size: max(1.3888888889vw, 18px);
   white-space: nowrap;
+  margin-right: 0.5555555556vw;
+  font-weight: 500;
+}
+.p-header__breadcrumb--home:visited {
+  color: #000;
 }
 
-.p-header__breadcrumb__arrow {
-  font-size: max(1.3888888889vw, 18px);
+.p-header__breadcrumb--arrow {
+  font-size: max(1.3888888889vw, 16px);
+  margin-right: 0.5555555556vw;
 }
 
-.p-header__breadcrumb__current {
+.p-header__breadcrumb--current {
   color: #08144B;
-  text-decoration: underline;
   font-family: "Roboto", sans-serif;
   font-size: max(1.3888888889vw, 18px);
   white-space: nowrap;
+}
+
+.p-header__breadcrumb--category {
+  font-family: "Roboto", sans-serif;
+  font-size: max(1.3888888889vw, 18px);
+  white-space: nowrap;
+  margin-right: 0.5555555556vw;
+  font-weight: 500;
 }
 
 .p-profile__link--sp {
@@ -1269,6 +1288,8 @@ p {
   .p-profile__image {
     width: 39.100684262vw;
     height: 39.100684262vw;
+    max-width: none;
+    max-height: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1276,6 +1297,8 @@ p {
     width: 91.4666666667vw;
     height: 91.4666666667vw;
     margin-bottom: 6.4vw;
+    max-width: none;
+    max-height: none;
   }
 }
 
@@ -1368,7 +1391,7 @@ p {
   .p-profile__career--top {
     font-size: max(4.2666666667vw, 16px);
     margin-bottom: 4.2666666667vw;
-    max-width: 280px;
+    max-width: none;
   }
 }
 
@@ -1376,12 +1399,13 @@ p {
   font-family: "Noto Serif JP", serif;
   font-size: 1.25vw;
   margin-bottom: 1.6666666667vw;
+  max-width: 320px;
 }
 @media screen and (max-width: 767px) {
   .p-profile__career--bottom {
     font-size: max(4.2666666667vw, 16px);
     margin-bottom: 4.2666666667vw;
-    max-width: 280px;
+    max-width: none;
   }
 }
 
@@ -2800,20 +2824,20 @@ p {
   }
 }
 
-.p-works__thumbnail--RaiseTech-google-banner {
+.p-works__thumbnail--rectangle-design {
   display: flex;
   object-fit: cover;
   width: 52.0833333333vw;
   height: 26.0416666667vw;
 }
 @media screen and (max-width: 767px) {
-  .p-works__thumbnail--RaiseTech-google-banner {
+  .p-works__thumbnail--rectangle-design {
     width: 91.4666666667vw;
     height: 48vw;
   }
 }
 
-.p-works__thumbnail--RaiseTech-sns-banner {
+.p-works__thumbnail--square-design {
   display: block;
   margin: 0 auto;
   object-fit: cover;
@@ -2821,7 +2845,7 @@ p {
   height: 33.3333333333vw;
 }
 @media screen and (max-width: 767px) {
-  .p-works__thumbnail--RaiseTech-sns-banner {
+  .p-works__thumbnail--square-design {
     width: 91.4666666667vw;
     height: 91.4666666667vw;
   }
@@ -2830,9 +2854,10 @@ p {
 .p-works__thumbnail--logo {
   display: block;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
   width: 48.6111111111vw;
   height: 6.9444444444vw;
+  margin-bottom: 8.3333333333vw;
 }
 @media screen and (max-width: 767px) {
   .p-works__thumbnail--logo {
@@ -2841,7 +2866,7 @@ p {
   }
 }
 
-.p-works__thumbnail__box {
+.p-works__thumbnail__box--web-site {
   width: 50vw;
   height: 40.8333333333vw;
   background: #D9D9D9;
@@ -2850,7 +2875,7 @@ p {
   margin-bottom: 8.3333333333vw;
 }
 @media screen and (max-width: 767px) {
-  .p-works__thumbnail__box {
+  .p-works__thumbnail__box--web-site {
     width: 57.3333333333vw;
     height: 60.8vw;
     margin-top: -54.4vw;
@@ -2858,7 +2883,7 @@ p {
   }
 }
 
-.p-works__thumbnail__box--RaiseTech-google-banner {
+.p-works__thumbnail__box--rectangle-banner {
   width: 50vw;
   height: 32.7083333333vw;
   background: #D9D9D9;
@@ -2867,7 +2892,7 @@ p {
   margin-bottom: 8.3333333333vw;
 }
 @media screen and (max-width: 767px) {
-  .p-works__thumbnail__box--RaiseTech-google-banner {
+  .p-works__thumbnail__box--rectangle-banner {
     width: 57.3333333333vw;
     height: 60.8vw;
     margin-top: -54.4vw;
@@ -2876,7 +2901,7 @@ p {
   }
 }
 
-.p-works__thumbnail__box--RaiseTech-sns-banner {
+.p-works__thumbnail__box--square-banner {
   width: 50vw;
   height: 37.7777777778vw;
   background: #D9D9D9;
@@ -2885,7 +2910,7 @@ p {
   margin-bottom: 8.3333333333vw;
 }
 @media screen and (max-width: 767px) {
-  .p-works__thumbnail__box--RaiseTech-sns-banner {
+  .p-works__thumbnail__box--square-banner {
     width: 91.4666666667vw;
     height: 104.2666666667vw;
     margin-left: 0vw;
@@ -2902,6 +2927,10 @@ p {
   .p-works__design__container {
     display: block;
   }
+}
+
+.p-works__design__container--none {
+  display: none;
 }
 
 .p-works__desing__wrapper {
@@ -2938,6 +2967,9 @@ p {
   padding: 1.6666666667vw;
   background: #DEDEDE;
   margin-bottom: 2.7777777778vw;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media screen and (max-width: 767px) {
   .p-quote__wrapper {
@@ -2986,7 +3018,7 @@ p {
 
 .p-quote__list {
   font-family: "Noto Serif JP", serif;
-  font-size: max(1.1111111111vw, 16px);
+  font-size: max(1.1111111111vw, 14px);
 }
 
 .p-quote__text {
@@ -3055,6 +3087,12 @@ p {
   width: clamp(50px, 4.8611111111vw, 70px);
   height: clamp(50px, 4.8611111111vw, 70px);
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .c-skill__icon__image--html {
+    width: max(13.3333333333vw, 50px);
+    height: max(13.3333333333vw, 50px);
+  }
 }
 
 .c-skill__icon__image--sass {
@@ -3170,21 +3208,21 @@ p {
 }
 
 .c-profile__external-link--twitter {
-  background: url(../img/twitter-icon.png);
+  background: url("./img/twitter-icon.png");
   background-size: cover;
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
 }
 
 .c-profile__external-link--blog {
-  background: url(../img/blog-icon.png);
+  background: url(./img/blog-icon.png);
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
   background-size: cover;
 }
 
 .c-profile__external-link--GitHub {
-  background: url(../img/github-icon.png);
+  background: url(./img/github-icon.png);
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
   background-size: cover;

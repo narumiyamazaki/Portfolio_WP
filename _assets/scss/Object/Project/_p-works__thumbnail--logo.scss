@@ -3,9 +3,10 @@
 .p-works__thumbnail--logo{
     display: block;
     margin:0 auto;
-    object-fit: contain;
+    object-fit: cover;
     width:calc(700/1440*100vw);
     height:calc(100/1440*100vw);
+    margin-bottom:calc(120/1440*100vw);
     @include mixin.mq(sp){
         width: calc(343/375*100vw);
         height: calc(52/375*100vw);

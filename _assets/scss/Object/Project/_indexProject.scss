@@ -17,11 +17,12 @@
 @use './p-main-visual__text--Japanese--sp';
 @use './p-main-visual__text--English--sp';
 
-@use './p-header__breadcrumb__wrapper';
+@use './p-header__breadcrumb__inner';
 @use './p-header__title';
-@use './p-header__breadcrumb__home';
-@use './p-header__breadcrumb__arrow';
-@use './p-header__breadcrumb__current.scss';
+@use './p-header__breadcrumb--home';
+@use './p-header__breadcrumb--arrow';
+@use './p-header__breadcrumb--current';
+@use './p-header__breadcrumb--category';
 @use './p-profile__link--sp';
 
 //共通スタイル top-page
@@ -186,13 +187,14 @@
 @use './p-works__heading3__lower-page__wrapper--design';
 @use './p-works__heading3--lower-page';
 @use './p-works__thumbnail--web-site';
-@use './p-works__thumbnail--RaiseTech-google-banner';
-@use './p-works__thumbnail--RaiseTech-sns-banner';
+@use './p-works__thumbnail--rectangle-design';
+@use './p-works__thumbnail--square-design';
 @use './p-works__thumbnail--logo';
-@use './p-works__thumbnail__box';
-@use './p-works__thumbnail__box--RaiseTech-google-banner';
-@use './p-works__thumbnail__box--RaiseTech-sns-banner';
+@use './p-works__thumbnail__box--web-site';
+@use './p-works__thumbnail__box--rectangle-banner';
+@use './p-works__thumbnail__box--square-banner';
 @use './p-works__design__container';
+@use './p-works__design__container--none';
 @use './p-works__desing__wrapper';
 @use './p-works__design--portfolio';
 @use './p-works__design__inner';

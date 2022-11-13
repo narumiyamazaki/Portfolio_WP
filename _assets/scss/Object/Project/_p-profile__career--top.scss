@@ -9,6 +9,6 @@
     @include mixin.mq(sp){
         font-size:max(calc(16/375*100vw),16px);
         margin-bottom:calc(16/375*100vw);
-        max-width:280px;
+        max-width:none;
     }
 }

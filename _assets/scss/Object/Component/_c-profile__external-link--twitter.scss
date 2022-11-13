@@ -1,5 +1,6 @@
 .c-profile__external-link--twitter{
-    background:url(../img/twitter-icon.png);
+    //src="<?php echo esc_url(get_theme_file_uri('/img/profile__image.png"'))
+    background:url("./img/twitter-icon.png");
     background-size: cover;
     width: max(calc(50/1440*100vw),40px);
     height: max(calc(50/1440*100vw),40px);
