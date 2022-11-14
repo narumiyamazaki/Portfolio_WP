@@ -6,6 +6,10 @@
     font-size:calc(24/1440*100vw);
     font-weight: 600;
     padding-top: calc(16/1440*100vw);
+    @include mixin.mq(tb){
+        font-size:calc(24/1023*100vw);
+        text-align: left;
+    }
     @include mixin.mq(sp){
         font-size:calc(18/375*100vw);
         padding:0;

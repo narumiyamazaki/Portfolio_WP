@@ -7,6 +7,9 @@
     font-size:calc(56/1440*100vw);
     margin-bottom:calc(8/1440*100vw);
     font-weight: 400;
+    @include mixin.mq(tb){
+        font-size:calc(56/1023*100vw);
+    }
     @include mixin.mq(sp){
         font-size:calc(48/375*100vw);
         margin-bottom:calc(24/375*100vw);

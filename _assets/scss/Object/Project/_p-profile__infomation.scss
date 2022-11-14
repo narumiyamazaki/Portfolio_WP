@@ -4,6 +4,9 @@
     width: calc(660/1440*100vw);
     border-top: 1px #000 solid;
     border-bottom: 1px #000 solid;
+    @include mixin.mq(tb){
+        width:calc(800/1023*100vw);
+    }
     @include mixin.mq(sp){
         display: none;
     }

@@ -3,6 +3,9 @@
 .p-profile__heading__comment__emphasis{
     font-size:calc(32/1440*100vw);
     font-weight: bold;
+    @include mixin.mq(tb){
+        font-size:calc(32/1023);
+    }
     @include mixin.mq(sp){
         font-size:calc(24/375*100vw);
     }

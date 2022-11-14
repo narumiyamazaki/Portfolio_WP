@@ -6,6 +6,9 @@
     align-items: flex-end;
     order:1;
     padding-bottom:calc(40/1440*100vw);
+    @include mixin.mq(tb){
+        flex-direction: column;
+    }
     @include mixin.mq(sp){
         max-width:calc(375/375*100vw);
         display: block;
