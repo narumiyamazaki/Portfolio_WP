@@ -5,6 +5,10 @@
     font-family: va.$font-base-Japanese;
     font-size:max(calc(16/1440*100vw),16px);
     max-width: min(calc(650/1440*100vw),650px);
+    @include mixin.mq(tb){
+        max-width: 100vw;
+        font-size: max(calc(16/1023*100vw));
+    }
     @include mixin.mq(sp){
         max-width: 100vw;
         font-size: max(calc(16/375*100vw));

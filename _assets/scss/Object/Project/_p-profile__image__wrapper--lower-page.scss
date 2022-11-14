@@ -1,6 +1,9 @@
 @use '../../../scss/Foundation/mixin';
 
 .p-profile__image__wrapper--lower-page{
+    @include mixin.mq(tb){
+        display: none;
+    }
     @include mixin.mq(sp){
         padding-bottom:calc(80/375*100vw);
         border-bottom:1px solid #000;

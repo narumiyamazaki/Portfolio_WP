@@ -5,7 +5,8 @@
     border-top: 1px #000 solid;
     border-bottom: 1px #000 solid;
     @include mixin.mq(tb){
-        width:calc(800/1023*100vw);
+        //width:calc(450/1023*100vw);
+        display: none;
     }
     @include mixin.mq(sp){
         display: none;

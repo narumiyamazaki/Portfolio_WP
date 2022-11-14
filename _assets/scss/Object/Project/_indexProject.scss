@@ -143,11 +143,14 @@
 @use './p-profile__heading__comment';
 @use './p-profile__heading__comment__shadow';
 @use './p-profile__heading__comment__emphasis';
+@use './p-profile__infomation__container';
 @use './p-profile__infomation';
-@use './p-profile__image__wrapper--lower-page.scss';
+@use './p-profile__image__wrapper--lower-page';
+@use './p-profile__image__wrapper__lower-page--tb';
 
 //SP用の表
 @use './p-profile__infomation--sp';
+@use './_p-profile__infomation--tb';
 @use './p-profile__item--Japanese';
 @use './p-profile__item__name--lower-page';
 @use './p-profile__item__residence--lower-page';

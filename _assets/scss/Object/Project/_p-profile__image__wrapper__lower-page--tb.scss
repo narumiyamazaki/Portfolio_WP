@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__image__wrapper__lower-page--tb{
+    display: none;
+    @include mixin.mq(tb){
+        display: block;
+    }
+    @include mixin.mq(sp){
+        display: none;
+    }
+}

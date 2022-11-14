@@ -1,0 +1,10 @@
+//TB用の記述
+@use '../../../scss/Foundation/mixin';
+.p-profile__infomation__container{
+    display: block;
+    @include mixin.mq(tb){
+        display: flex;
+        justify-content: space-between;
+    }
+    display: block;
+}
