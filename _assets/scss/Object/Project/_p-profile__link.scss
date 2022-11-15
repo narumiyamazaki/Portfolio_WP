@@ -14,7 +14,7 @@
     height: calc(48/1440*100vw);
     //height: max(calc(48/1440*100vw),48px);
     //padding:12px 0;
-    padding:calc(12/1440*100vw) 0;
+    padding:calc(6/1440*100vw) 0;
     text-align: center;
     //矢印配置のため
     position:relative;
@@ -59,7 +59,7 @@
     & .p-profile__link__arrow{
         border-top: solid 1px #FAFF0D;
         border-right: solid 1px #FAFF0D;
-        }
+    }
     /*矢印
     & .p-profile__link__arrow::before{
         content:'';

@@ -1438,7 +1438,7 @@ h2, h3, h4 {
   border-radius: 30px;
   display: block;
   height: 3.3333333333vw;
-  padding: 0.8333333333vw 0;
+  padding: 0.4166666667vw 0;
   text-align: center;
   position: relative;
 }
@@ -2379,6 +2379,7 @@ h2, h3, h4 {
   .p-profile__heading__comment {
     font-size: 1.7595307918vw;
     padding: 0.7820136852vw 1.5640273705vw;
+    right: 12px;
   }
 }
 @media screen and (max-width: 767px) {
