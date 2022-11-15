@@ -4,7 +4,7 @@
     display: none;
     @include mixin.mq(tb){
         display: block;
-        width:calc(300/1023*100vw);
+        width:calc(350/1023*100vw);
         border-top: 1px #000 solid;
         border-bottom: 1px #000 solid;
     }

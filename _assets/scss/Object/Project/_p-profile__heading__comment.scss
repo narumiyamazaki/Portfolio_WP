@@ -12,6 +12,7 @@
     @include mixin.mq(tb){
         font-size:calc(18/1023*100vw);
         padding:calc(8/1023*100vw) calc(16/1023*100vw);
+        right: 12px;
     }
     @include mixin.mq(sp){
         font-size:calc(16/375*100vw);

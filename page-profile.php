@@ -37,26 +37,32 @@ Template Name:profile
                     </table>
                     <!--TB用のテーブル-->
                     <div class="p-profile__infomation__container">
-                        <table class="p-profile__infomation--tb">
-                            <tbody class="p-profile__infomation__inner">
-                                <tr class="p-profile__table__residence">
-                                    <th class="p-profile__item__name--lower-page"><span class="p-profile__item--Japanese">氏名</span><span class="p-profile__item--English-translation">name</span></th>
-                                    <td class="p-profile__name--lower-page">narumi</td>
-                                </tr>
-                                <tr class="p-profile__table--residence">
-                                    <th class="p-profile__item__residence--lower-page"><span class="p-profile__item--Japanese">居住地</span><span class="p-profile__item--English-translation">residence</span></th>
-                                    <td class="p-profile__residence--lower-page">福井県福井市</td>
-                                </tr>
-                                <tr class="p-profile__table--year-of-birth">
-                                    <th class="p-profile__item__year-of-birth--lower-page"><span class="p-profile__item--Japanese">生年</span><span class="p-profile__item--English-translation">year&nbsp;of&nbsp;birth</span></th>
-                                    <td class="p-profile__year-of-birth--lower-page">1989年&lpar;平成元年&rpar;</td>
-                                </tr>
-                                <tr class="p-profile__table--occupation">
-                                    <th class="p-profile__item__occupation--lower-page"><span class="p-profile__item--Japanese">職業</span><span class="p-profile__item--English-translation">occupation</span></th>
-                                    <td class="p-profile__occupation--lower-page">会社員</td>
-                                </tr>
-                            </tbody>    
-                        </table>
+                        <div class="p-profile__infomation__wrapper">
+                            <div class="p-profile__heading__comment__wrapper--tb">
+                                <p class="p-profile__heading__comment"><span class="p-profile__heading__comment__emphasis">デザイン的視点</span>を持って<br>コーディングしています。</p>
+                                <div class="p-profile__heading__comment__shadow"></div>
+                            </div>
+                            <table class="p-profile__infomation--tb">
+                                <tbody class="p-profile__infomation__inner">
+                                    <tr class="p-profile__table__residence">
+                                        <th class="p-profile__item__name--lower-page"><span class="p-profile__item--Japanese">氏名</span><span class="p-profile__item--English-translation">name</span></th>
+                                        <td class="p-profile__name--lower-page">narumi</td>
+                                    </tr>
+                                    <tr class="p-profile__table--residence">
+                                        <th class="p-profile__item__residence--lower-page"><span class="p-profile__item--Japanese">居住地</span><span class="p-profile__item--English-translation">residence</span></th>
+                                        <td class="p-profile__residence--lower-page">福井県福井市</td>
+                                    </tr>
+                                    <tr class="p-profile__table--year-of-birth">
+                                        <th class="p-profile__item__year-of-birth--lower-page"><span class="p-profile__item--Japanese">生年</span><span class="p-profile__item--English-translation">year&nbsp;of&nbsp;birth</span></th>
+                                        <td class="p-profile__year-of-birth--lower-page">1989年&lpar;平成元年&rpar;</td>
+                                    </tr>
+                                    <tr class="p-profile__table--occupation">
+                                        <th class="p-profile__item__occupation--lower-page"><span class="p-profile__item--Japanese">職業</span><span class="p-profile__item--English-translation">occupation</span></th>
+                                        <td class="p-profile__occupation--lower-page">会社員</td>
+                                    </tr>
+                                </tbody>    
+                            </table>
+                        </div>
                         <div class="p-profile__image__wrapper__lower-page--tb">
                             <img class="p-profile__image--lower-page" src="<?php echo esc_url(get_theme_file_uri('/img/profile__image.png"'))?>" alt="サイト製作者30代男性笑顔の写真">
                             <div class="p-profile__external-link__wrapper">

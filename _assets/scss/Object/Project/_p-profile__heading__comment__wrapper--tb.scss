@@ -1,0 +1,11 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-profile__heading__comment__wrapper--tb{
+    display: none;
+    @include mixin.mq(tb){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: calc(40/1023*100vw);
+    }
+}

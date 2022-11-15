@@ -8,8 +8,8 @@
     margin-bottom:calc(24/1440*100vw);
     object-fit: cover;
     @include mixin.mq(tb){
-        width:calc(300/1023*100vw);
-        height:calc(300/1023*100vw)
+        width:calc(400/1023*100vw);
+        height:calc(450/1023*100vw)
     }
     @include mixin.mq(sp){
         width:calc(343/375*100vw);

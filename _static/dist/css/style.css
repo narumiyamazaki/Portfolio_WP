@@ -1324,6 +1324,11 @@ h2, h3, h4 {
   display: block;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__item--English-translation {
+    margin-bottom: 1.5640273705vw;
+  }
+}
 @media screen and (max-width: 767px) {
   .p-profile__item--English-translation {
     font-size: max(3.7333333333vw, 14px);
@@ -1531,6 +1536,28 @@ h2, h3, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__heading__comment__wrapper {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-profile__heading__comment__wrapper {
+    display: block;
+  }
+}
+
+.p-profile__heading__comment__wrapper--tb {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__heading__comment__wrapper--tb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.9100684262vw;
   }
 }
 
@@ -2352,6 +2379,7 @@ h2, h3, h4 {
   .p-profile__heading__comment {
     font-size: 1.7595307918vw;
     padding: 0.7820136852vw 1.5640273705vw;
+    right: 12px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2375,7 +2403,7 @@ h2, h3, h4 {
   .p-profile__heading__comment__shadow {
     width: 23.6559139785vw;
     height: 3.4213098729vw;
-    margin-left: 2.9325513196vw;
+    margin-left: 6.8426197458vw;
     top: 6.3538611926vw;
   }
 }
@@ -2394,7 +2422,7 @@ h2, h3, h4 {
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__heading__comment__emphasis {
-    font-size: 0.0312805474;
+    font-size: 3.128054741vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2474,7 +2502,7 @@ h2, h3, h4 {
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__infomation--tb {
     display: block;
-    width: 29.3255131965vw;
+    width: 34.2130987292vw;
     border-top: 1px #000 solid;
     border-bottom: 1px #000 solid;
   }
@@ -2722,8 +2750,8 @@ h2, h3, h4 {
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__image--lower-page {
-    width: 29.3255131965vw;
-    height: 29.3255131965vw;
+    width: 39.100684262vw;
+    height: 43.9882697947vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2740,6 +2768,11 @@ h2, h3, h4 {
   margin: 0 auto;
   width: 13.75vw;
   margin-bottom: 1.1111111111vw;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__external-link__wrapper {
+    width: 19.3548387097vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .p-profile__external-link__wrapper {
