@@ -25,5 +25,6 @@
   opacity: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding-left: calc(16/375*100vw);
 }

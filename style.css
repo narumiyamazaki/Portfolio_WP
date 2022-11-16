@@ -572,7 +572,7 @@ h2, h3, h4 {
 @media screen and (max-width: 767px) {
   .l-header--lower-page {
     width: 100vw;
-    justify-content: right;
+    justify-content: space-between;
   }
 }
 
@@ -799,7 +799,8 @@ h2, h3, h4 {
   opacity: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding-left: 4.2666666667vw;
 }
 
 .p-header__nav__main-menu--sp {
@@ -1015,11 +1016,6 @@ h2, h3, h4 {
 .p-header__title__wrapper {
   order: 0;
   margin-left: 8.3333333333vw;
-}
-@media screen and (max-width: 767px) {
-  .p-header__title__wrapper {
-    display: none;
-  }
 }
 
 .p-nav--btn {
@@ -2878,6 +2874,12 @@ h2, h3, h4 {
   padding: 1.1111111111vw 0;
   border-top: 1px #000 solid;
   border-bottom: 1px #000 solid;
+  height: 22.2222222222;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__about-me__text__wrapper {
+    height: 33.2355816227vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .p-profile__about-me__text__wrapper {
