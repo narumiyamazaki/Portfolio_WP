@@ -7,7 +7,12 @@
             <h2 class="p-works__heading2__English--lower-page">Works<span class="p-works__heading2__Japanese--lower-page">制作実績</span></h2>
             <div class="p-works__heading3__lower-page__wrapper--web-site">
                 <h3 class="p-works__heading3--lower-page">
-                    <?php the_title(); ?>
+                    <!--スマホとそれ以外とで表示を変える-->
+                    <?php if(is_mobile()): ?>
+                        <?php the_title(); ?>
+                    <?php else: ?>
+                        <?php the_title_attribute(); ?>
+                    <?php endif; ?>
                 </h3>
                 <span class="c-works__role"><?php if(has_tag('Design')){echo 'Design';}elseif(has_tag('Coding')){echo 'Coding';}else{echo 'Coding&amp;Design';}?></span>
             </div>

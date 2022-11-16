@@ -11,6 +11,7 @@
     align-items: center;
     background: #E0E0E0;
     padding:max(calc(16/1440*100vw),16px);
+    font-weight: 500;
     @include mixin.mq(sp){
         font-size:calc(16/375*100vw);
         display: inline-block;

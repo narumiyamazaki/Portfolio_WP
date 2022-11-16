@@ -2932,8 +2932,8 @@ h2, h3, h4 {
   color: #08144B;
   font-family: "Roboto", sans-serif;
   font-size: 3.8888888889vw;
-  margin-bottom: 0.5555555556vw 8px;
-  margin-bottom: 8px;
+  margin-bottom: 5.5555555556vw;
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   .p-works__heading2__English--lower-page {
@@ -2976,7 +2976,8 @@ h2, h3, h4 {
 
 .p-works__heading3__lower-page__wrapper--web-site {
   display: flex;
-  margin-bottom: 12.7777777778vw;
+  margin-bottom: 2.2222222222vw;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .p-works__heading3__lower-page__wrapper--web-site {
@@ -3472,6 +3473,7 @@ h2, h3, h4 {
   align-items: center;
   background: #E0E0E0;
   padding: max(1.1111111111vw, 16px);
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   .c-works__role {
