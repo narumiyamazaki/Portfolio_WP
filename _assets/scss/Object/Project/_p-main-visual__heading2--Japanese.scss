@@ -3,8 +3,8 @@
 
 .p-main-visual__heading2--Japanese{
     font-family: va.$font-base-Japanese;
-    font-size:calc(32/1440*100vw);
-    margin-bottom:24px; 
+    font-size:calc(24/1440*100vw);
+    margin-bottom:calc(24/1440*100vw); 
     @include mixin.mq(sp){
         font-size:calc(18/375*100vw);
         margin-bottom:calc(8/375*100vw);

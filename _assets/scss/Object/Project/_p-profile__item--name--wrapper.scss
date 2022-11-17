@@ -1,7 +1,7 @@
 @use '../../../scss/Foundation/mixin';
 
 .p-profile__item--name--wrapper{
-    margin-right:32px;
+    margin-right:calc(32/1440*100vw);;
     @include mixin.mq(sp){
         margin-right:calc(24/375*100vw);
     }

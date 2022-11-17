@@ -3,6 +3,7 @@
 
 .p-skill__text__item{
     font-family: va.$font-base-Japanese;
+    font-weight: 400;
     font-size:max(calc(16/1440*100vw),14px);
     color:va.$sub-color-w;
     @include mixin.mq(tb){

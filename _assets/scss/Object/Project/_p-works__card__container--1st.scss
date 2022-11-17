@@ -7,7 +7,7 @@
     gap:calc(40/1440*100vw);
     margin-bottom:calc(56/1440*100vw);
     @include mixin.mq(tb){
-        gap:calc(100/1023*100vw);
+        gap:calc(67/1023*100vw);
     }
     @include mixin.mq(sp){
         display: block;

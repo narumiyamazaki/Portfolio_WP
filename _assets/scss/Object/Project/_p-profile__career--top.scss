@@ -6,6 +6,9 @@
     font-size: calc(18/1440*100vw);
     margin-bottom:calc(8/1440*100vw);
     max-width: 320px;
+    @include mixin.mq(tb){
+        margin-bottom: calc(8/1023*100vw);
+    }
     @include mixin.mq(sp){
         font-size:max(calc(16/375*100vw),16px);
         margin-bottom:calc(16/375*100vw);

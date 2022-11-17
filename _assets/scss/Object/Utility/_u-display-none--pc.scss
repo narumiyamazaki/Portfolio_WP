@@ -1,0 +1,8 @@
+@use '../../../scss/Foundation/mixin';
+
+.u-display-none--pc{
+    display: none;;
+    @include mixin.mq(sp){
+        display: block;
+    }
+}

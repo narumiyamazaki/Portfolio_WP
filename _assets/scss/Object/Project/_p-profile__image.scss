@@ -3,8 +3,8 @@
 .p-profile__image{
     width:calc(480/1440*100vw);
     height:calc(488/1440*100vw);
-    max-width: 560px;
-    max-height: 560px;
+    //max-width: 560px;
+    //max-height: 560px;
     border:10px solid #08144B;
     border-radius: 100px;
     @include mixin.mq(tb){

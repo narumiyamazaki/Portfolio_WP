@@ -4,7 +4,7 @@
 .p-profile__heading2--Japanese{
     font-family: va.$font-base-Japanese;
     color: va.$main-color;
-    font-size:calc(16/1440*100vw);
+    font-size:max(calc(16/1440*100vw),16px);
     margin-left:8px;
     @include mixin.mq(tb){
         font-size:calc(16/1023*100vw);

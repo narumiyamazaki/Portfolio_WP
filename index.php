@@ -7,7 +7,7 @@
                 <img class="p-main-visual--sp" src="<?php echo esc_url(get_theme_file_uri('img/MV_sp.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
             </h1>
             <div class="p-main-visual__text__wrapper">
-                <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--sp" >ありがとうございます</h2>
+                <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--pc" >ありがとうございます</h2>
                 <p class="p-main-visual__text--Japanese">コーダーをしています<br>詳しいプロフィールはこの下にあります<br>お仕事についてはヘッダーのContactからお願いします</p>
                 <!--SP用の文章-->
                 <p class="p-main-visual__text--Japanese--sp">コーダーをしています<br>詳しいプロフィールはこの下にあります<br>お仕事についてはContactからお願いします</p>
