@@ -1017,6 +1017,11 @@ h2, h3, h4 {
   order: 0;
   margin-left: 8.3333333333vw;
 }
+@media screen and (max-width: 767px) {
+  .p-header__title__wrapper {
+    margin-left: 4.2666666667vw;
+  }
+}
 
 .p-nav--btn {
   display: none;
@@ -3018,7 +3023,7 @@ h2, h3, h4 {
 @media screen and (max-width: 767px) {
   .p-works__heading3__lower-page__wrapper--web-site {
     display: block;
-    margin-bottom: 2.1333333333vw;
+    margin-bottom: 21.3333333333vw;
   }
 }
 
@@ -3115,6 +3120,7 @@ h2, h3, h4 {
     height: 60.8vw;
     margin-top: -54.4vw;
     margin-left: 0vw;
+    margin-bottom: 19.7222222222vw;
   }
 }
 
