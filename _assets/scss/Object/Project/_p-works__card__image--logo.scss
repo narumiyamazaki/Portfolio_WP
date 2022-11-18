@@ -1,0 +1,29 @@
+@use '../../../scss/Foundation/mixin';
+
+.p-works__card__image--logo{
+    //右下にroleを固定
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    //background:url(./img/portofolio-thumbnail.png) left top/cover;
+    //margin-bottom: calc(32/1440*100vw);
+    width:calc(280/1440*100vw);
+    height:calc(280/1440*100vw);
+    //border: 1px #000 solid;
+    position: static;
+    z-index: 0;
+    background-size:contain;
+    background-repeat: no-repeat;
+    @include mixin.mq(tb){
+        width:calc(220/1023*100vw);
+        height:calc(220/1023*100vw);
+    }
+    @include mixin.mq(sp){
+        width:calc(343/375*100vw);
+        height:calc(343/375*100vw);
+    }
+    &:hover{
+        transform: scale(1.1);
+        transition: linear .1s;
+    }
+}

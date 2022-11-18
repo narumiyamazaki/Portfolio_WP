@@ -77,7 +77,7 @@
                 <?php
                 $image_all = wp_get_attachment_image_src(get_post_meta($post->ID,'File Upload All',true),'full');
                 ?>
-                <img class="p-works__design--portfolio" src="<?php echo esc_url($image_all[0]); ?>" alt="ポートフォリオサイトデザイン全体" loading="lazy">
+                <img class="p-works__design--portfolio" src="<?php echo esc_url($image_all[0]); ?>" alt="<?php echo post_custom('All Image Alt'); ?>" loading="lazy">
             </div>
             <!--疑似的なpaddingのためのbox-->
             <div class="p-works__desing__box"></div>

@@ -11,6 +11,7 @@
     text-align: left;
     @include mixin.mq(tb){
         font-size:calc(24/1023*100vw);
+        width:calc(110/1023*100vw);
     }
     @include mixin.mq(sp){
         padding:0;

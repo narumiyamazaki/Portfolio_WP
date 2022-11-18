@@ -44,7 +44,7 @@ Template Name:profile
                             </div>
                             <table class="p-profile__infomation--tb">
                                 <tbody class="p-profile__infomation__inner">
-                                    <tr class="p-profile__table__residence">
+                                    <tr class="p-profile__table--name">
                                         <th class="p-profile__item__name--lower-page"><span class="p-profile__item--Japanese">氏名</span><span class="p-profile__item--English-translation">name</span></th>
                                         <td class="p-profile__name--lower-page">narumi</td>
                                     </tr>
@@ -79,7 +79,7 @@ Template Name:profile
                     <!--SP用のテーブル-->
                     <table class="p-profile__infomation--sp">
                         <tbody class="p-profile__infomation__inner">
-                            <tr class="p-profile__table__residence">
+                            <tr class="p-profile__table--residence">
                                 <th class="p-profile__item__name--lower-page"><span class="p-profile__item--Japanese">氏名</span><span class="p-profile__item--English-translation">name</span></th>
                                 <td class="p-profile__name--lower-page">narumi</td>
                             </tr>

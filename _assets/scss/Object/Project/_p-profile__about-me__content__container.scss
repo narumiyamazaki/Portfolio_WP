@@ -2,7 +2,7 @@
 
 .p-profile__about-me__content__container{
     width:calc(1200/1440*100vw);
-    padding:calc(40/1440*100vw);
+    //padding:calc(40/1440*100vw);
     @include mixin.mq(sp){
         width: calc(343/375*100vw);
         padding:0;

@@ -4,11 +4,12 @@
     padding: calc(16/1440*100vw) 0;
     border-top: 1px #000 solid;
     border-bottom: 1px #000 solid;
-    height: calc(320/1440*100);
+    height: calc(320/1440*100vw);
     @include mixin.mq(tb){
-        height:calc(340/1023*100vw);
+        height:calc(430/1023*100vw);
     }
     @include mixin.mq(sp){
         padding:calc(16/375*100vw) 0;
+        height:calc(400/375*100vw);
     }
 }

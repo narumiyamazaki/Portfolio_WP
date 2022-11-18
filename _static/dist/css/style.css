@@ -1939,6 +1939,34 @@ h2, h3, h4 {
   transition: linear 0.1s;
 }
 
+.p-works__card__image--logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  width: 19.4444444444vw;
+  height: 19.4444444444vw;
+  position: static;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-works__card__image--logo {
+    width: 21.5053763441vw;
+    height: 21.5053763441vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-works__card__image--logo {
+    width: 91.4666666667vw;
+    height: 91.4666666667vw;
+  }
+}
+.p-works__card__image--logo:hover {
+  transform: scale(1.1);
+  transition: linear 0.1s;
+}
+
 .p-works__card__image__wrapper {
   margin-bottom: 2.2222222222vw;
   border: 1px #000 solid;
@@ -2436,7 +2464,7 @@ h2, h3, h4 {
   .p-profile__heading__comment__shadow {
     width: 23.6559139785vw;
     height: 3.4213098729vw;
-    margin-left: 6.8426197458vw;
+    margin-left: 8.7976539589vw;
     top: 6.3538611926vw;
   }
 }
@@ -2563,6 +2591,7 @@ h2, h3, h4 {
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__item__name--lower-page {
     font-size: 2.3460410557vw;
+    width: 10.752688172vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2584,6 +2613,7 @@ h2, h3, h4 {
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__item__residence--lower-page {
     font-size: 2.3460410557vw;
+    width: 10.752688172vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2606,6 +2636,7 @@ h2, h3, h4 {
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__item__year-of-birth--lower-page {
     font-size: 2.3460410557vw;
+    width: 10.752688172vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2628,6 +2659,7 @@ h2, h3, h4 {
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__item__occupation--lower-page {
     font-size: 2.3460410557vw;
+    width: 10.752688172vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2877,7 +2909,6 @@ h2, h3, h4 {
 
 .p-profile__about-me__content__container {
   width: 83.3333333333vw;
-  padding: 2.7777777778vw;
 }
 @media screen and (max-width: 767px) {
   .p-profile__about-me__content__container {
@@ -2915,16 +2946,17 @@ h2, h3, h4 {
   padding: 1.1111111111vw 0;
   border-top: 1px #000 solid;
   border-bottom: 1px #000 solid;
-  height: 22.2222222222;
+  height: 22.2222222222vw;
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__about-me__text__wrapper {
-    height: 33.2355816227vw;
+    height: 42.0332355816vw;
   }
 }
 @media screen and (max-width: 767px) {
   .p-profile__about-me__text__wrapper {
     padding: 4.2666666667vw 0;
+    height: 106.6666666667vw;
   }
 }
 
@@ -2938,6 +2970,11 @@ h2, h3, h4 {
 @media screen and (max-width: 767px) {
   .p-profile__about-me__text:not(:last-child) {
     margin-bottom: 5.6vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-profile__about-me__text {
+    font-size: 1.5640273705vw;
   }
 }
 @media screen and (max-width: 767px) {
