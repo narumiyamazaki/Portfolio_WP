@@ -610,6 +610,11 @@ h2, h3, h4 {
   align-items: center;
   padding: 0.6944444444vw 1.1111111111vw;
 }
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .p-header__nav__main-menu__item {
+    padding: 0.9775171065vw 1.5640273705vw;
+  }
+}
 @media screen and (max-width: 767px) {
   .p-header__nav__main-menu__item {
     background: transparent;
@@ -1244,7 +1249,7 @@ h2, h3, h4 {
   font-family: "Noto Serif JP", serif;
   color: #08144B;
   font-size: max(1.1111111111vw, 16px);
-  margin-left: 8px;
+  margin-left: 0.5555555556vw;
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__heading2--Japanese {
@@ -1323,6 +1328,7 @@ h2, h3, h4 {
   font-style: italic;
   display: block;
   font-weight: 400;
+  margin-bottom: 0.5555555556vw;
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__item--English-translation {
@@ -2434,13 +2440,13 @@ h2, h3, h4 {
   background: #FAFF0D;
   padding: max(0.5555555556vw, 8px) max(1.1111111111vw, 16px);
   position: relative;
-  right: 20px;
+  right: 1.3888888889vw;
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__heading__comment {
     font-size: 1.7595307918vw;
     padding: 0.7820136852vw 1.5640273705vw;
-    right: 12px;
+    right: 1.1730205279vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2691,6 +2697,7 @@ h2, h3, h4 {
   .p-profile__name--lower-page {
     font-size: 4.8vw;
     padding-top: 4.2666666667vw;
+    vertical-align: top;
   }
 }
 
@@ -2711,6 +2718,7 @@ h2, h3, h4 {
   .p-profile__residence--lower-page {
     font-size: 4.8vw;
     padding: 0;
+    vertical-align: top;
   }
 }
 
@@ -2732,6 +2740,7 @@ h2, h3, h4 {
     padding: 0;
     font-size: 4.8vw;
     position: relative;
+    vertical-align: top;
   }
 }
 
@@ -2752,6 +2761,7 @@ h2, h3, h4 {
   .p-profile__occupation--lower-page {
     font-size: max(4.8vw, 18px);
     padding: 0;
+    vertical-align: top;
   }
 }
 
@@ -2893,6 +2903,7 @@ h2, h3, h4 {
 
 .p-profile__about-me__wrapper {
   order: 1;
+  padding-bottom: 2.7777777778vw;
 }
 
 .p-profile__about-me {
@@ -3131,7 +3142,7 @@ h2, h3, h4 {
 .p-works__thumbnail--logo {
   display: block;
   margin: 0 auto;
-  object-fit: cover;
+  object-fit: contain;
   width: 48.6111111111vw;
   height: 6.9444444444vw;
   margin-bottom: 8.3333333333vw;
@@ -3323,6 +3334,21 @@ h2, h3, h4 {
 @media screen and (min-width: 1024px) {
   .wp-block-contact-form-7-contact-form-selector {
     width: 36.1111111111vw;
+  }
+}
+
+.wpcf7-response-output {
+  font-size: max(1.1111111111vw, 16px);
+  color: #fff;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .wpcf7-response-output {
+    font-size: max(1.5640273705vw, 16px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wpcf7-response-output {
+    font-size: max(3.7333333333vw, 14px);
   }
 }
 
@@ -3527,6 +3553,12 @@ h2, h3, h4 {
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
 }
+@media screen and (max-width: 767px) {
+  .c-profile__external-link--twitter {
+    width: 13.3333333333vw;
+    height: 13.3333333333vw;
+  }
+}
 
 .c-profile__external-link--blog {
   background: url(./img/blog-icon.png);
@@ -3534,12 +3566,24 @@ h2, h3, h4 {
   height: max(3.4722222222vw, 40px);
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .c-profile__external-link--blog {
+    width: 13.3333333333vw;
+    height: 13.3333333333vw;
+  }
+}
 
 .c-profile__external-link--GitHub {
   background: url(./img/github-icon.png);
   width: max(3.4722222222vw, 40px);
   height: max(3.4722222222vw, 40px);
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .c-profile__external-link--GitHub {
+    width: 13.3333333333vw;
+    height: 13.3333333333vw;
+  }
 }
 
 .c-works__role {

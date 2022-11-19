@@ -9,6 +9,9 @@
     display:flex;
     align-items: center;
     padding:calc(10/1440*100vw) calc(16/1440*100vw);
+    @include mixin.mq(tb){
+        padding:calc(10/1023*100vw) calc(16/1023*100vw);
+    }
     @include mixin.mq(sp){
         background: transparent;
         color:va.$sub-color-y;

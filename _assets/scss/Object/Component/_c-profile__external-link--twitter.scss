@@ -1,7 +1,13 @@
+@use '../../../scss/Foundation/mixin';
+
 .c-profile__external-link--twitter{
     //src="<?php echo esc_url(get_theme_file_uri('/img/profile__image.png"'))
     background:url("./img/twitter-icon.png");
     background-size: cover;
     width: max(calc(50/1440*100vw),40px);
     height: max(calc(50/1440*100vw),40px);
+    @include mixin.mq(sp){
+        width:calc(50/375*100vw);
+        height: calc(50/375*100vw);
+    }
 }
