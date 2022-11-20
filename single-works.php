@@ -63,7 +63,7 @@
                                     '<p class="p-quote__text"><span class="u-margin-16px"></span>ミライニは、&#12300;明るい未来に向けて薬局としての役割を果たす&#12301;という&#12300;未来に&#12301;を、読みやすさとすっきりとした文字のカタカナで表現。</p>',
                                     '<p class="p-quote__text--last">病院の先生とは違う、薬の専門家として&#12300;薬のことを相談しやすい&#12301;&#12300;気軽に質問できる&#12301;ホスピタリティを目指す。</p>');
                     $content_string = str_replace($target,$replace,$content_string); 
-                    echo $content_string;
+                    echo esc_html($content_string);
                 ?>
             </div>
         </article>
