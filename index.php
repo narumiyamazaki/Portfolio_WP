@@ -1,32 +1,32 @@
 <?php get_header(); ?>
         <main class="l-main">
-            <!--MV TB・PC-->
+            <?php //<!--MV TB・PC--> ?>
             <h1 class="p-heading1">
                 <img class="p-main-visual" src="<?php echo esc_url(get_theme_file_uri('img/MV.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
-                <!--SP用の画像-->
+                <?php //<!--SP用の画像--> ?>
                 <img class="p-main-visual--sp" src="<?php echo esc_url(get_theme_file_uri('img/MV_sp.png'))?>" alt="ご覧いただきましてありがとうございます。コーダーをしています。詳しいプロフィールはこの下にあります。お仕事についてはヘッダーのContactからお願いいたします。">
             </h1>
             <div class="p-main-visual__text__wrapper">
                 <h2 class="p-main-visual__heading2--Japanese">ご覧いただきまして<br class="u-display-none--pc" >ありがとうございます</h2>
                 <p class="p-main-visual__text--Japanese">コーダーをしています<br>詳しいプロフィールはこの下にあります<br>お仕事についてはヘッダーのContactからお願いします</p>
-                <!--SP用の文章-->
+                <?php //<!--SP用の文章--> ?>
                 <p class="p-main-visual__text--Japanese--sp">コーダーをしています<br>詳しいプロフィールはこの下にあります<br>お仕事についてはContactからお願いします</p>
-                <!--SP用の文章ここまで-->
+                <?php //<!--SP用の文章ここまで--> ?>
                 <h2 class="p-main-visual__heading2--English">Thank you for visiting</h2>
                 <p class="p-main-visual__text--English">I'm a coder<br>Detailed profile and production results are below<br>For work, please contact us from the header</p>
-                <!--SP用の文章-->
+                <?php //<!--SP用の文章--> ?>
                 <p class="p-main-visual__text--English--sp">I'm a coder<br>Detailed profile and production results are below<br>Please inquire about work from Contact</p> 
-                <!--SP用の文章ここまで-->
+                <?php //<!--SP用の文章ここまで--> ?>
             </div>
-            <!--プロフィール-->
+            <?php //<!--プロフィール--> ?>
             <article class="p-profile">
-                <!--プロフィールテキストと写真のwrapper-->
+                <?php //<!--プロフィールテキストと写真のwrapper--> ?>
                 <div class="p-profile__contents__container">
-                    <!--プロフィールテキストのwrapper-->
+                    <?php //<!--プロフィールテキストのwrapper--> ?>
                     <div class="p-profile__contents__wrapper">
                         <h2 class="p-profile__heading2--English">Profile<span class="p-profile__heading2--Japanese">プロフィール</span></h2>
                         <p class="p-profile__text--main">プロフィールをご覧いただき<br class="u-display-none--sp">ありがとうございます。</p>
-                        <!--氏名のwrapper-->
+                        <?php //<!--氏名のwrapper--> ?>
                         <dl class="p-profile__contents__wrapper--name">
                             <div class="p-profile__item--name--wrapper">
                                 <dt class="p-profile__item--name">氏名</dt>
@@ -39,7 +39,7 @@
                                 ?>
                             </dd>
                         </dl>
-                        <!--経歴のwrapper-->
+                        <?php //<!--経歴のwrapper--> ?>
                         <dl class="p-profile__contents__wrapper--career">
                             <div class="p-profile__item--career--wrapper">
                                 <dt class="p-profile__item--career">経歴</dt>
@@ -55,27 +55,27 @@
                         ?>
                         <a class="p-profile__link" href="<?php echo esc_url(get_permalink($page_profile -> ID)); ?>">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                     </div>
-                    <!--写真のwrapper-->
+                    <?php //<!--写真のwrapper--> ?>
                     <img class="p-profile__image" src="<?php echo esc_url(get_theme_file_uri('/img/profile__image.png'));?>" alt="サイト製作者30代男性笑顔の写真">
                     <a class="p-profile__link--sp" href="<?php echo esc_url(get_permalink($page_profile -> ID)); ?>">詳しいプロフィールを見る<span class="p-profile__link__arrow"></span></a>
                 </div>
-                <!--両サイドの装飾-->
+                <?php //<!--両サイドの装飾--> ?>
                 <div class="p-top-page__side--left"><span class="c-side__text">profile</span></div>
                 <div class="p-top-page__side--right"><span class="c-side__text">profile</span></div>
             </article>
-            <!--section区切りのボーダー-->
+            <?php //<!--section区切りのボーダー--> ?>
             <div class="u-margin__section-border"><span class="c-section-border"></span></div>
-            <!--スキル-->
-            <!--アンカーリンクずれ対策用の要素-->
+            <?php //<!--スキル--> ?>
+            <?php //<!--アンカーリンクずれ対策用の要素--> ?>
             <div id="skill" class="p-skill__anchor"></div>
-            <!--アンカーリンクずれ対策用の要素-->
+            <?php //<!--アンカーリンクずれ対策用の要素--> ?>
             <article class="p-skill">
-                <!--中央部分のcontainer-->
+                <?php //<!--中央部分のcontainer--> ?>
                 <div class="p-skill__container">
                     <h2 class="p-skill__heading2--English">Skill<span class="p-skill__heading2--Japanese">スキル</span></h2>
-                    <!--コーディング部分左右のwrapper-->
+                    <?php //<!--コーディング部分左右のwrapper--> ?>
                     <div class="p-skill__wrapper--coding">
-                    <!--コーディング部分　左側-->
+                    <?php //<!--コーディング部分　左側--> ?>
                         <section class="p-skill__inner--coding">
                             <h3 class="p-skill__heading3">静的ページの作成<br>WordPressオリジナルテーマ開発</h3>
                             <div class="p-skill__icon__wrapper--coding">
@@ -88,7 +88,7 @@
                             <p class="p-skill__text--period">学習期間&lpar;実務対応期間含む&rpar;</p>
                             <p class="p-skill__text--date">1年8ヶ月</p>
                         </section>
-                        <!--コーディング部分　右側-->
+                        <?php //<!--コーディング部分　右側--> ?>
                         <ul class="p-skill__text__item__wrapper">
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>セマンティクスなマークアップ</li>
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>FLOCSSを使ったCSS設計、Sassの使用</li>
@@ -98,12 +98,12 @@
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>静的サイトのWordPress化</li>
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>JavaScriptライブラリjQueryを用いた実装</li>
                         </ul>
-                        <!--SP用-->
+                        <?php //<!--SP用--> ?>
                         <p class="p-skill__text__period--sp">学習期間&lpar;実務対応期間含む&rpar;</p>
                         <p class="p-skill__text__date--sp">1年8ヶ月</p>
                     </div>
                     <div class="u-margin__section-border--skill"><span class="c-section-border--skill"></span></div>
-                    <!--デザイン部分左右のwrapper-->
+                    <?php //<!--デザイン部分左右のwrapper--> ?>
                     <div class="p-skill__wrapper--design">
                         <section class="p-skill__inner--design">
                             <h3 class="p-skill__heading3">デザインツールの基本的な使用<br>Photoshop・illustrator・Figma</h3>
@@ -129,20 +129,20 @@
                         <p class="p-skill__text__date--sp">4ヶ月</p>
                     </div>
                 </div>
-                <!--両サイドの装飾-->
+                <?php //<!--両サイドの装飾--> ?>
                 <div class="p-top-page__side--left"><span class="c-side__text">profile</span></div>
                 <div class="p-top-page__side--right"><span class="c-side__text">profile</span></div>
             </article>
-            <!--section区切りのボーダー-->
+            <?php //<!--section区切りのボーダー--> ?>
             <div class="u-margin__section-border"><span class="c-section-border"></span></div>
-            <!--ワークスセクション-->
+            <?php //<!--ワークスセクション--> ?>
             <article class="p-works">
-                <!--中央部分のcontainer-->
+                <?php //<!--中央部分のcontainer--> ?>
                 <div class="p-works__container">
                     <h2 class="p-works__heading2--English">Works<span class="p-works__heading2--Japanese">作品事例</span></h2>
                     <p class="p-works__text">今までの制作事例です</p>
                     <div class="p-works__card__container--1st">
-                        <!--カスタム投稿を取得する-->
+                        <?php //<!--カスタム投稿を取得する--> ?>
                         <?php
                         //取得する記事の条件
                         $args = array(
@@ -158,7 +158,7 @@
                                         get_template_part('archive-works');                            
                                 endwhile;
                                 endif; ?>
-                        <!--グローバル変数$postをリセット(必須)-->
+                        <?php //<!--グローバル変数$postをリセット(必須)--> ?>
                         <?php wp_reset_postdata(); ?>
                     </div>
                 </div>

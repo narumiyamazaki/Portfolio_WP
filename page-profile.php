@@ -6,11 +6,11 @@ Template Name:profile
 <?php get_header('lower-page') ?>
     <main class="p-main--lower-page">
         <div class="p-profile__container--lower-page">
-            <!--中央部分のwrapper-->
+            <?php //<!--中央部分のwrapper--> ?>
             <article class="p-profile__wrapper--lower-page">
-                <!--テキスト部分のinner-->
+                <?php //<!--テキスト部分のinner--> ?>
                 <div class="p-profile__inner--lower-page">
-                    <!--見出しとコメントのwrapper-->
+                    <?php //<!--見出しとコメントのwrapper--> ?>
                     <div class="p-profile__heading__wrapper">
                         <h2 class="p-profile__heading2--English">Profile<span class="p-profile__heading2--Japanese">プロフィール</span></h2>
                         <div class="p-profile__heading__comment__wrapper">
@@ -18,7 +18,7 @@ Template Name:profile
                             <div class="p-profile__heading__comment__shadow"></div>
                         </div>
                     </div>
-                    <!--PC用のテーブル-->
+                    <?php //<!--PC用のテーブル--> ?>
                     <table class="p-profile__infomation">
                         <tbody class="p-profile__infomation__inner">
                             <tr class="p-profile--top">
@@ -35,7 +35,7 @@ Template Name:profile
                             </tr>
                         </tbody>    
                     </table>
-                    <!--TB用のテーブル-->
+                    <?php //<!--TB用のテーブル--> ?>
                     <div class="p-profile__infomation__container">
                         <div class="p-profile__infomation__wrapper">
                             <div class="p-profile__heading__comment__wrapper--tb">
@@ -76,7 +76,7 @@ Template Name:profile
                             <p class="p-profile__external-link__text">SNS・BLOG・GitHubへのリンクはこちら</p>
                         </div>
                     </div>
-                    <!--SP用のテーブル-->
+                    <?php //<!--SP用のテーブル--> ?>
                     <table class="p-profile__infomation--sp">
                         <tbody class="p-profile__infomation__inner">
                             <tr class="p-profile__table--residence">
@@ -106,7 +106,7 @@ Template Name:profile
                         <p class="p-profile__career__text"><span class="u-margin-16px"></span>2022年04月 デザイン学習を開始<br><span class="u-margin-16px"></span>スクールにてデザインの基本的な考え方やillustrator・Photoshop・Figmaの基本的な使い方、Webバナー、Webサイト制作について学習を行いました。
                     </section>
                 </div>
-                <!--写真・外部リンク-->
+                <?php //<!--写真・外部リンク--> ?>
                 <div class="p-profile__image__wrapper--lower-page">
                     <img class="p-profile__image--lower-page" src="<?php echo esc_url(get_theme_file_uri('/img/profile__image.png"'))?>" alt="サイト製作者30代男性笑顔の写真">
                     <div class="p-profile__external-link__wrapper">
@@ -120,18 +120,18 @@ Template Name:profile
                     <p class="p-profile__external-link__text">SNS・BLOG・GitHubへのリンクはこちら</p>
                 </div>
             </article>
-            <!--両サイドの装飾-->
+            <?php //<!--両サイドの装飾--> ?>
             <div class="p-lower-page__side--left"></div>
             <div class="p-lower-page__side--right"></div>
         </div>
-        <!--私について部分-->
+        <?php //<!--私について部分--> ?>
         <div class="p-profile__about-me">
-            <!--中央と左右の装飾のwrapper-->
+            <?php //<!--中央と左右の装飾のwrapper--> ?>
             <article class="p-profile__about-me__wrapper">
-                <!--見出しと内容ののwrapper-->
+                <?php //<!--見出しと内容ののwrapper--> ?>
                 <div class="p-profile__about-me__content__container">
                     <h2 class="p-profile__about-me__heading2--English">About&nbsp;me<span class="p-profile__about-me__heading2--Japanese">私についてもう少しお話しします</span></h2>
-                    <!--テキスト部分-->
+                    <?php //<!--テキスト部分--> ?>
                     <section class="p-profile__about-me__content__wrapper">
                         <section class="p-profile__about-me__content__inner">
                             <h3 class="p-profile__about-me__heading3"><span class="u-highlighter--about-me">1&#46;あなたの性格を教えてください</span></h3>

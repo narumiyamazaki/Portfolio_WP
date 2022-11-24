@@ -7,7 +7,6 @@
     </head>
 	<body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <!--条件分岐させる class="l-header"-->
         <header class="<?php if(!is_home() && !is_front_page() ){
             echo "l-header--lower-page";
             }else{ 

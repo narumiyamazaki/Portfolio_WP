@@ -1,13 +1,13 @@
 <?php get_header('lower-page') ?>
-<!--ヘッダー-->
+<?php //<!--ヘッダー--> ?>
 <main class="p-main--lower-page">
     <div class="p-works__container--lower-page">
-        <!--中央部分のwrapper-->
+        <?php //<!--中央部分のwrapper--> ?>
         <article class="p-works__wrapper--lower-page">
             <h2 class="p-works__heading2__English--lower-page">Works<span class="p-works__heading2__Japanese--lower-page">制作実績</span></h2>
             <div class="<?php if (has_tag('web-site')){ echo "p-works__heading3__lower-page__wrapper--web-site"; }else{echo "p-works__heading3__lower-page__wrapper--design"; } ?>">
                 <h3 class="p-works__heading3--lower-page">
-                    <!--スマホとそれ以外とで表示を変える-->
+                    <?php //<!--スマホとそれ以外とで表示を変える--> ?>
                     <?php if(is_mobile()): ?>
                         <?php the_title(); ?>
                     <?php else: ?>
@@ -16,15 +16,15 @@
                 </h3>
                 <span class="c-works__role"><?php if(has_tag('Design')){echo 'Design';}elseif(has_tag('Coding')){echo 'Coding';}else{echo 'Coding&amp;Design';}?></span>
             </div>
-             <!--タグにWeb-siteがある時かどうかでクラス名を変える-->
-             <a class= "<?php if (has_tag('Web-site')){echo "p-link__work--web-site"; } else { echo "p-link__work--design"; } ;?>" href="<?php echo esc_url(post_custom('URL')); ?>">Webサイトへ移動する&gt;</a>
+            <?php //<!--タグにWeb-siteがある時かどうかでクラス名を変える--> ?>
+            <a class= "<?php if (has_tag('Web-site')){echo "p-link__work--web-site"; } else { echo "p-link__work--design"; } ;?>" href="<?php echo esc_url(post_custom('URL')); ?>">Webサイトへ移動する&gt;</a>
             <?php
             //カスタムフィールドの変数File Upload Topのオブジェクトを取得
             $image_top = wp_get_attachment_image_src(get_post_meta($post->ID,'File Upload Top',true),'full');
             //カスタムフィールドの変数Image Top Altを取得
             //$image_alt = wp_get_attachment_image_src(get_post_meta($post->ID,'File Upload Top',true),'full');
             ?>
-            <!--タグによってクラス名を分岐 $image[0]に入っている画像のURLを表示 -->
+            <?php //<!--タグによってクラス名を分岐 $image[0]に入っている画像のURLを表示 --> ?>
             <img class="<?php if(has_tag('web-site')){echo "p-works__thumbnail--web-site";
             }elseif(has_tag('Design') && has_tag('rectangle')){
                 echo "p-works__thumbnail--rectangle-design";
@@ -71,7 +71,7 @@
                 ?>
             </div>
         </article>
-        <!--両サイドの装飾-->
+        <?php //<!--両サイドの装飾--> ?>
         <div class="p-lower-page__side--left"></div>
         <div class="p-lower-page__side--right"></div>
     </div>
@@ -83,7 +83,7 @@
                 ?>
                 <img class="p-works__design--portfolio" src="<?php echo esc_url($image_all[0]); ?>" alt="<?php echo post_custom('All Image Alt'); ?>" loading="lazy">
             </div>
-            <!--疑似的なpaddingのためのbox-->
+            <?php //<!--疑似的なpaddingのためのbox--> ?>
             <div class="p-works__desing__box"></div>
         </div>
         <div class="p-lower-page__side--left"></div>
