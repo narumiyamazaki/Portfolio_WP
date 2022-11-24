@@ -5,6 +5,7 @@
     //aタグ
         display: block;
         position:relative;
+        color: va.$main-color;
         &:visited{
             color: va.$main-color;
             @include mixin.mq(sp){

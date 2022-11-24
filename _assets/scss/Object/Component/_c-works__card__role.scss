@@ -5,6 +5,7 @@
     font-family: va.$font-base-English;
     font-weight: bold;
     font-style: italic;
+    font-size: max(calc(16/1440*100vw),16px);
     display:flex;
     justify-content: center;
     align-items: center;

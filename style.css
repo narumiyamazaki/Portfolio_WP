@@ -660,6 +660,7 @@ h2, h3, h4 {
 .p-header__nav__main-menu__item--other > .p-header__nav__main-menu__item-link {
   display: block;
   position: relative;
+  color: #FAFF0D;
 }
 .p-header__nav__main-menu__item--other > .p-header__nav__main-menu__item-link:visited {
   color: #FAFF0D;
@@ -768,6 +769,7 @@ h2, h3, h4 {
 .p-header__nav__main-menu__item-link {
   display: block;
   position: relative;
+  color: #08144B;
 }
 .p-header__nav__main-menu__item-link:visited {
   color: #08144B;
@@ -3519,6 +3521,7 @@ h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: italic;
+  font-size: max(1.1111111111vw, 16px);
   display: flex;
   justify-content: center;
   align-items: center;
