@@ -2,6 +2,7 @@
 jQuery('.p-nav--btn').on('click', function () {
     jQuery('.p-nav--btn > a').toggleClass('open');
     jQuery('.p-header__nav--sp').toggleClass('active');
+    jQuery('.p-header__title').toggleClass('active');
 });
 
 

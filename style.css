@@ -883,6 +883,14 @@ h2, h3, h4 {
   font-size: max(1.1111111111vw, 16px);
   margin-bottom: 3px;
 }
+@media screen and (max-width: 767px) {
+  .p-header__title {
+    font-size: max(3.7333333333vw, 14px);
+  }
+}
+.p-header__title.active {
+  display: none;
+}
 
 .p-header__breadcrumb--home {
   font-family: "Roboto", sans-serif;
