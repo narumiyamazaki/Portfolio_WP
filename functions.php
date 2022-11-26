@@ -173,7 +173,7 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
 
         //カスタム投稿タイプ名の表示
         echo '<li class="p-header__breadcrumb__item">'.
-                '<a class="p-header__breadcrumb--post-category" href="http://portfolio.local/#works">'.
+                '<a class="p-header__breadcrumb--post-category" href="http://narumi-portfolio.com/#works">'.
                   '<span class="p-header__breadcrumb---post-category">'. $post_type_label .'</span>'.
                 '</a>'.
             '</li>'.
