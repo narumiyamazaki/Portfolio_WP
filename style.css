@@ -558,6 +558,27 @@ h2, h3, h4 {
   margin: 0;
 }
 
+input[type=submit],
+input[type=button] {
+  border-radius: 10px;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type=submit]::focus,
+input[type=button]::focus {
+  outline-offset: -2px;
+}
+
 .l-header {
   display: flex;
   align-items: center;
@@ -2339,6 +2360,7 @@ h2, h3, h4 {
   padding: 0.5555555556vw 2.7777777778vw;
   background: #fff;
   border-radius: max(1.3888888889vw, 20px);
+  color: #000;
 }
 @media screen and (max-width: 767px) {
   .p-footer__form__button {

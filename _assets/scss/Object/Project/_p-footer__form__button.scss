@@ -7,6 +7,7 @@
     padding: calc(8/1440*100vw) calc(40/1440*100vw);
     background:#fff;
     border-radius: max(calc(20/1440*100vw),20px);
+    color:#000;
     @include mixin.mq(sp){
         display: block;
         font-size:calc(16/375*100vw);
