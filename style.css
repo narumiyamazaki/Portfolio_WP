@@ -1341,7 +1341,7 @@ h2, h3, h4 {
   width: 33.3333333333vw;
   height: 33.8888888889vw;
   border: 10px solid #08144B;
-  border-radius: 100px;
+  border-radius: 6.9444444444vw;
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__image {
@@ -1455,7 +1455,7 @@ h2, h3, h4 {
   font-family: "Noto Serif JP", serif;
   font-size: 1.25vw;
   margin-bottom: 0.5555555556vw;
-  max-width: 320px;
+  max-width: max(22.2222222222vw, 320px);
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
   .p-profile__career--top {
@@ -1474,7 +1474,7 @@ h2, h3, h4 {
   font-family: "Noto Serif JP", serif;
   font-size: 1.25vw;
   margin-bottom: 1.6666666667vw;
-  max-width: 320px;
+  max-width: max(22.2222222222vw, 320px);
 }
 @media screen and (max-width: 767px) {
   .p-profile__career--bottom {
@@ -1487,10 +1487,10 @@ h2, h3, h4 {
 .p-profile__link {
   font-family: "Noto Serif JP", serif;
   color: #08144B;
-  font-size: max(1.1111111111vw, 16px);
+  font-size: max(1.5277777778vw, 16px);
   font-weight: bold;
   border: 1px solid;
-  border-radius: 30px;
+  border-radius: 2.0833333333vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1522,14 +1522,20 @@ h2, h3, h4 {
     justify-content: center;
     content: "";
     position: absolute;
-    left: 6.9444444444vw;
+    left: 4.0972222222vw;
     bottom: 7px;
-    height: 1px;
+    height: max(0.0694444444vw, 1px);
     background: #FAFF0D;
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform 0.1s;
-    width: 13.6111111111vw;
+    width: 18.125vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-profile__link::after {
+    left: 4.4444444444vw;
+    width: 18.4722222222vw;
   }
 }
 .p-profile__link:hover::after {
@@ -1760,7 +1766,7 @@ h2, h3, h4 {
 .p-skill__text__item__wrapper {
   background: #08144B;
   padding: 2.5vw;
-  border-radius: 30px;
+  border-radius: 2.0833333333vw;
 }
 @media screen and (max-width: 767px) {
   .p-skill__text__item__wrapper {
@@ -2275,9 +2281,9 @@ h2, h3, h4 {
 }
 
 .p-footer__form__input--name {
-  width: 240px;
-  height: 30px;
-  margin-bottom: 24px;
+  width: max(16.6666666667vw, 240px);
+  height: max(2.0833333333vw, 30px);
+  margin-bottom: max(1.6666666667vw, 24px);
   background: #fff;
   display: block;
 }
@@ -2289,8 +2295,8 @@ h2, h3, h4 {
 }
 
 .p-footer__form__input--company {
-  width: 320px;
-  height: 30px;
+  width: max(22.2222222222vw, 320px);
+  height: max(2.0833333333vw, 30px);
   margin-bottom: 24px;
   background: #fff;
   display: block;
@@ -2303,10 +2309,10 @@ h2, h3, h4 {
 }
 
 .p-footer__form__input--email {
-  width: 520px;
-  height: 30px;
+  width: max(36.1111111111vw, 520px);
+  height: max(2.0833333333vw, 30px);
   background: #fff;
-  margin-bottom: 24px;
+  margin-bottom: max(1.6666666667vw, 24px);
 }
 @media screen and (max-width: 767px) {
   .p-footer__form__input--email {
@@ -2315,9 +2321,9 @@ h2, h3, h4 {
 }
 
 .p-footer__form__textarea {
-  width: 520px;
-  height: 193px;
-  margin-bottom: 5vw;
+  width: max(36.1111111111vw, 520px);
+  height: max(13.4027777778vw, 193px);
+  margin-bottom: max(5vw, 72px);
   background: #fff;
 }
 @media screen and (max-width: 767px) {
@@ -2332,7 +2338,7 @@ h2, h3, h4 {
   font-size: 1.6666666667vw;
   padding: 0.5555555556vw 2.7777777778vw;
   background: #fff;
-  border-radius: 20px;
+  border-radius: max(1.3888888889vw, 20px);
 }
 @media screen and (max-width: 767px) {
   .p-footer__form__button {
@@ -2869,7 +2875,7 @@ h2, h3, h4 {
   width: 33.9583333333vw;
   height: 44.9305555556vw;
   border: 10px solid #08144B;
-  border-radius: 100px;
+  border-radius: 6.9444444444vw;
   margin-bottom: 1.6666666667vw;
   object-fit: cover;
 }
@@ -3421,8 +3427,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--html {
   background: url(./img/html-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3434,8 +3440,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--sass {
   background: url(./img/sass-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3447,8 +3453,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--WordPress {
   background: url(./img/WordPress-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3460,8 +3466,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--responsive {
   background: url(./img/responsive-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3473,7 +3479,7 @@ h2, h3, h4 {
 
 .c-skill__icon__text {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(14px, 0.9722222222vw, 16px);
+  font-size: max(0.9722222222vw, 14px);
   font-style: italic;
 }
 @media screen and (max-width: 767px) {
@@ -3483,8 +3489,8 @@ h2, h3, h4 {
 }
 
 .c-circle {
-  width: clamp(8px, 0.5555555556vw, 10px);
-  height: clamp(8px, 0.5555555556vw, 10px);
+  width: max(0.6944444444vw, 8px);
+  height: max(0.6944444444vw, 8px);
   background: #FAFAFA;
   display: inline-block;
   border-radius: 50%;
@@ -3510,8 +3516,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--retouch {
   background: url(./img/retouch-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3523,8 +3529,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--bezier-curve {
   background: url(./img/bezier-curve-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -3536,8 +3542,8 @@ h2, h3, h4 {
 
 .c-skill__icon__image--Figma {
   background: url(./img/Figma-icon.png);
-  width: clamp(50px, 4.8611111111vw, 70px);
-  height: clamp(50px, 4.8611111111vw, 70px);
+  width: max(4.8611111111vw, 50px);
+  height: max(4.8611111111vw, 50px);
   background-size: cover;
 }
 @media screen and (max-width: 767px) {

@@ -6,7 +6,7 @@
     //max-width: 560px;
     //max-height: 560px;
     border:10px solid #08144B;
-    border-radius: 100px;
+    border-radius: calc(100/1440*100vw);
     @include mixin.mq(tb){
         width:calc(400/1023*100vw);
         height: calc(400/1023*100vw);

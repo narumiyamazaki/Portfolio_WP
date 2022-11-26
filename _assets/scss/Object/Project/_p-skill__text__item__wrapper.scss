@@ -4,7 +4,7 @@
 .p-skill__text__item__wrapper{
     background: va.$main-color;
     padding:calc(36/1440*100vw);
-    border-radius: 30px;
+    border-radius: calc(30/1440*100vw);
     @include mixin.mq(sp){
         padding:calc(32/375*100vw) calc(16/375*100vw);
         margin-bottom:calc(16/375*100vw);

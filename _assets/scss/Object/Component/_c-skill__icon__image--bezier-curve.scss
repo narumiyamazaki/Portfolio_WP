@@ -2,8 +2,8 @@
 
 .c-skill__icon__image--bezier-curve{
     background:url(./img/bezier-curve-icon.png);
-    width: clamp(50px,calc(70/1440*100vw),70px);
-    height: clamp(50px,calc(70/1440*100vw),70px);
+    width: max(calc(70/1440*100vw),50px);
+    height: max(calc(70/1440*100vw),50px);
     background-size:cover;
     @include mixin.mq(sp){
         width:max(calc(50/375*100vw),50px);

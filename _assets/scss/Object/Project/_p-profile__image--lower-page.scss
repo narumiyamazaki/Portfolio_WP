@@ -4,7 +4,7 @@
     width:calc(489/1440*100vw);
     height: calc(647/1440*100vw);
     border: 10px solid #08144B;;
-    border-radius: 100px;
+    border-radius: calc(100/1440*100vw);
     margin-bottom:calc(24/1440*100vw);
     object-fit: cover;
     @include mixin.mq(tb){

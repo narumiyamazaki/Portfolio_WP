@@ -1,9 +1,9 @@
 @use '../../../scss/Foundation/mixin';
 
 .p-footer__form__textarea{
-    width:520px;
-    height: 193px;
-    margin-bottom:calc(72/1440*100vw);
+    width:max(calc(520/1440*100vw),520px);
+    height: max(calc(193/1440*100vw),193px);
+    margin-bottom:max(calc(72/1440*100vw),72px);
     background: #fff;
     @include mixin.mq(sp){
         width:calc(320/375*100vw);

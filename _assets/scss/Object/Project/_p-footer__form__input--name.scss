@@ -1,9 +1,9 @@
 @use '../../../scss/Foundation/mixin';
 
 .p-footer__form__input--name{
-    width:240px;
-    height: 30px;
-    margin-bottom:24px;
+    width:max(calc(240/1440*100vw),240px);
+    height: max(calc(30/1440*100vw),30px);
+    margin-bottom:max(calc(24/1440*100vw),24px);
     background: #fff;
     display: block;
     @include mixin.mq(sp){
