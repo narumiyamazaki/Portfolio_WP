@@ -22,7 +22,7 @@
 @use './p-header__breadcrumb--home';
 @use './p-header__breadcrumb--arrow';
 @use './p-header__breadcrumb--current';
-@use './p-header__breadcrumb--category';
+@use './p-header__breadcrumb--post-category';
 @use './p-profile__link--sp';
 
 //共通スタイル top-page
@@ -94,6 +94,7 @@
 @use './p-skill__wrapper--design';
 
 //works
+@use './p-works__anchor';
 @use './p-works';
 @use './p-works__heading2--English';
 @use './p-works__heading2--Japanese';

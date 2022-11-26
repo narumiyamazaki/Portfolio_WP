@@ -135,7 +135,10 @@
             </article>
             <?php //<!--section区切りのボーダー--> ?>
             <div class="u-margin__section-border"><span class="c-section-border"></span></div>
-            <?php //<!--ワークスセクション--> ?>
+            <?php //<!--ワークス--> ?>
+            <?php //<!--アンカーリンクずれ対策用の要素--> ?>
+            <div id="works" class="p-works__anchor"></div>
+            <?php //<!--アンカーリンクずれ対策用の要素--> ?>
             <article class="p-works">
                 <?php //<!--中央部分のcontainer--> ?>
                 <div class="p-works__container">

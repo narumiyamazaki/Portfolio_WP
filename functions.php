@@ -172,11 +172,10 @@ if ( ! function_exists( 'custom_breadcrumb' ) ) {
         $post_type_label = esc_html( get_post_type_object( $post_type )->label );
 
         //カスタム投稿タイプ名の表示
-        echo '<li>'.
-              //URLは不要なので
-              //'<a href="'. $post_type_link .'">'.
-                '<span class="p-header__breadcrumb--category">'. $post_type_label .'</span>'.
-              //'</a>'.
+        echo '<li class="p-header__breadcrumb__item">'.
+                '<a class="p-header__breadcrumb--post-category" href="http://portfolio.local/#works">'.
+                  '<span class="p-header__breadcrumb---post-category">'. $post_type_label .'</span>'.
+                '</a>'.
             '</li>'.
             '<div class="p-header__breadcrumb--arrow">&gt;</div>';
 

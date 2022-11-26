@@ -6,6 +6,9 @@
         display: block;
         position:relative;
         color: va.$main-color;
+        @include mixin.mq(sp){
+            color: va.$sub-color-y;
+        }
         &:visited{
             color: va.$main-color;
             @include mixin.mq(sp){

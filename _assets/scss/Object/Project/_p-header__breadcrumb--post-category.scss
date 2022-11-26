@@ -1,9 +1,10 @@
 @use '../../Foundation/vars' as va;
 
-.p-header__breadcrumb--category{
+.p-header__breadcrumb--post-category{
     font-family: va.$font-base-English;
     font-size: max(calc(20/1440*100vw),18px);
     white-space: nowrap;
     margin-right:calc(8/1440*100vw);
     font-weight: 500;
+    color: #000;
 }
