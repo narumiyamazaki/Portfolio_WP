@@ -908,6 +908,7 @@ h2, h3, h4 {
   white-space: nowrap;
   margin-right: 0.5555555556vw;
   font-weight: 500;
+  color: #000;
 }
 .p-header__breadcrumb--home:visited {
   color: #000;
@@ -931,6 +932,9 @@ h2, h3, h4 {
   white-space: nowrap;
   margin-right: 0.5555555556vw;
   font-weight: 500;
+  color: #000;
+}
+.p-header__breadcrumb--post-category:visited {
   color: #000;
 }
 
