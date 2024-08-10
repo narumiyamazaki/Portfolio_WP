@@ -85,22 +85,22 @@
                                 <span class="c-skill__icon__image--responsive"></span>
                                 <span class="c-skill__icon__text">and&nbsp;more...</span>
                             </div>
-                            <p class="p-skill__text--period">学習期間&lpar;実務対応期間含む&rpar;</p>
-                            <p class="p-skill__text--date">1年8ヶ月</p>
+                            <p class="p-skill__text--period">経験年数</p>
+                            <p class="p-skill__text--date">4年</p>
                         </section>
                         <?php //<!--コーディング部分　右側--> ?>
                         <ul class="p-skill__text__item__wrapper">
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>セマンティクスなマークアップ</li>
+							<li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>アクセシビリティへの対応</li>
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>FLOCSSを使ったCSS設計、Sassの使用</li>
-                            <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>デザインカンプからのコーディング</li>
+                            <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>JavaScript(GSAP・npm・webpack他)</li>
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>GitHubの基本的な使用&lpar;push・pull他&rpar;</li>
                             <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>レスポンシブ対応</li>
-                            <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>静的サイトのWordPress化</li>
-                            <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>JavaScriptライブラリjQueryを用いた実装</li>
+                            <li class="p-skill__text__item"><span class="c-circle"></span><span class="u-margin--8px"></span>WordPress対応(オリジナルテーマ開発)</li>
                         </ul>
                         <?php //<!--SP用--> ?>
-                        <p class="p-skill__text__period--sp">学習期間&lpar;実務対応期間含む&rpar;</p>
-                        <p class="p-skill__text__date--sp">1年8ヶ月</p>
+                        <p class="p-skill__text__period--sp">経験年数</p>
+                        <p class="p-skill__text__date--sp">4年</p>
                     </div>
                     <div class="u-margin__section-border--skill"><span class="c-section-border--skill"></span></div>
                     <?php //<!--デザイン部分左右のwrapper--> ?>
